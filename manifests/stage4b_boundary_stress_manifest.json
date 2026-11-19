@@ -1,0 +1,112 @@
+{
+  "manifest_type": "PUBLIC_SANITIZED_COMMITMENT_MANIFEST",
+  "original_private_manifest_sha256": "c72bc1ecebd5ae2065bcce0cded5ac2284d45fda75df4def3c6f87b9091a0859",
+  "redaction_notice": "Proprietary hardware-aware optimization parameters and physical qubit coordinates are withheld per PUBLIC_DISCLOSURE.md.",
+  "experimental_design_note": "Targeted follow-up boundary-stress test prospectively committed prior to Stage 4B hardware execution after observing Stage 3 and Stage 4A.",
+  "manifest_version": "1.0_frozen_pre_stage4b_hardware",
+  "frozen_timestamp_utc": "2026-11-04T02:54:29.986656+00:00",
+  "heldout_hardware_executed_before_freeze": false,
+  "n_groups": 4,
+  "n_workloads": 16,
+  "fixed_policy_pubs": {
+    "Always_1Way_Isolated": 16,
+    "Always_2Way_Packed": 8,
+    "Always_4Way_Packed": 4
+  },
+  "prospective_scheduler_pubs": 12,
+  "total_stage4b_pubs": 40,
+  "group_schedules": {
+    "HS01": {
+      "group_id": "HS01",
+      "workloads": [
+        "HS01_qaoa_sparse_5q_g1",
+        "HS02_chem_ansatz_5q_g1",
+        "HS03_qaoa_dense3L_5q_g1",
+        "HS04_trotter_ring_5q_g1"
+      ],
+      "chosen_policy": "2+1+1",
+      "n_pubs": 3,
+      "pub_partition": [
+        [
+          "HS01_qaoa_sparse_5q_g1",
+          "HS02_chem_ansatz_5q_g1"
+        ],
+        [
+          "HS03_qaoa_dense3L_5q_g1"
+        ],
+        [
+          "HS04_trotter_ring_5q_g1"
+        ]
+      ]
+    },
+    "HS02": {
+      "group_id": "HS02",
+      "workloads": [
+        "HS05_qaoa_sparse_5q_g2",
+        "HS06_chem_ansatz_5q_g2",
+        "HS07_qaoa_dense3L_5q_g2",
+        "HS08_trotter_ring_5q_g2"
+      ],
+      "chosen_policy": "2+1+1",
+      "n_pubs": 3,
+      "pub_partition": [
+        [
+          "HS05_qaoa_sparse_5q_g2",
+          "HS06_chem_ansatz_5q_g2"
+        ],
+        [
+          "HS07_qaoa_dense3L_5q_g2"
+        ],
+        [
+          "HS08_trotter_ring_5q_g2"
+        ]
+      ]
+    },
+    "HS03": {
+      "group_id": "HS03",
+      "workloads": [
+        "HS09_qaoa_sparse_5q_g3",
+        "HS10_chem_ansatz_5q_g3",
+        "HS11_qaoa_dense3L_5q_g3",
+        "HS12_trotter_ring_5q_g3"
+      ],
+      "chosen_policy": "2+1+1",
+      "n_pubs": 3,
+      "pub_partition": [
+        [
+          "HS09_qaoa_sparse_5q_g3",
+          "HS10_chem_ansatz_5q_g3"
+        ],
+        [
+          "HS11_qaoa_dense3L_5q_g3"
+        ],
+        [
+          "HS12_trotter_ring_5q_g3"
+        ]
+      ]
+    },
+    "HS04": {
+      "group_id": "HS04",
+      "workloads": [
+        "HS13_qaoa_sparse_5q_g4",
+        "HS14_chem_ansatz_5q_g4",
+        "HS15_qaoa_dense3L_5q_g4",
+        "HS16_trotter_ring_5q_g4"
+      ],
+      "chosen_policy": "2+1+1",
+      "n_pubs": 3,
+      "pub_partition": [
+        [
+          "HS13_qaoa_sparse_5q_g4",
+          "HS14_chem_ansatz_5q_g4"
+        ],
+        [
+          "HS15_qaoa_dense3L_5q_g4"
+        ],
+        [
+          "HS16_trotter_ring_5q_g4"
+        ]
+      ]
+    }
+  }
+}

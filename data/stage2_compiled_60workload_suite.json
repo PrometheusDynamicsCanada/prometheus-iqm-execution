@@ -1,0 +1,4920 @@
+{
+  "suite_type": "PUBLIC_SANITIZED_WORKLOAD_REFERENCE_SUITE",
+  "original_private_compiled_suite_sha256": "b0f988565859128b3fceeded445f9a6cfa8959f1a00a196fdf96b7fa004c139a",
+  "redaction_notice": "Proprietary hardware-aware optimization parameters and physical qubit coordinates are withheld per PUBLIC_DISCLOSURE.md.",
+  "calibration_set_id": "5e8df132-fb44-4e99-86ac-9c1b07596f8b",
+  "groups": [
+    {
+      "group_id": "G01",
+      "width_type": "4Q_homogeneous",
+      "workloads": [
+        "W01_qft_4q_v1",
+        "W11_qaoa_dense_4q_v1",
+        "W21_qaoa_sparse_4q_v1",
+        "W31_chem_ansatz_4q_v1"
+      ]
+    },
+    {
+      "group_id": "G02",
+      "width_type": "4Q_homogeneous",
+      "workloads": [
+        "W41_dense_ent_4q_v1",
+        "W51_trotter_4q_v1",
+        "W02_qft_4q_v2",
+        "W12_qaoa_dense_4q_v2"
+      ]
+    },
+    {
+      "group_id": "G03",
+      "width_type": "4Q_homogeneous",
+      "workloads": [
+        "W22_qaoa_sparse_4q_v2",
+        "W32_chem_ansatz_4q_v2",
+        "W42_dense_ent_4q_v2",
+        "W52_trotter_4q_v2"
+      ]
+    },
+    {
+      "group_id": "G04",
+      "width_type": "4Q_homogeneous",
+      "workloads": [
+        "W03_qft_4q_v3",
+        "W13_qaoa_dense_4q_v3",
+        "W23_qaoa_sparse_4q_v3",
+        "W33_chem_ansatz_4q_v3"
+      ]
+    },
+    {
+      "group_id": "G05",
+      "width_type": "4Q_homogeneous",
+      "workloads": [
+        "W43_dense_ent_4q_v3",
+        "W53_trotter_4q_v3",
+        "W04_qft_4q_v4",
+        "W14_qaoa_dense_4q_v4"
+      ]
+    },
+    {
+      "group_id": "G06",
+      "width_type": "4Q_homogeneous",
+      "workloads": [
+        "W24_qaoa_sparse_4q_v4",
+        "W34_chem_ansatz_4q_v4",
+        "W44_dense_ent_4q_v4",
+        "W54_trotter_4q_v4"
+      ]
+    },
+    {
+      "group_id": "G07",
+      "width_type": "4Q_homogeneous",
+      "workloads": [
+        "W05_qft_4q_v5",
+        "W15_qaoa_dense_4q_v5",
+        "W25_qaoa_sparse_4q_v5",
+        "W35_chem_ansatz_4q_v5"
+      ]
+    },
+    {
+      "group_id": "G08",
+      "width_type": "5Q_homogeneous",
+      "workloads": [
+        "W06_qft_5q_v1",
+        "W16_qaoa_dense_5q_v1",
+        "W26_qaoa_sparse_5q_v1",
+        "W36_chem_ansatz_5q_v1"
+      ]
+    },
+    {
+      "group_id": "G09",
+      "width_type": "5Q_homogeneous",
+      "workloads": [
+        "W46_dense_ent_5q_v1",
+        "W56_trotter_5q_v1",
+        "W07_qft_5q_v2",
+        "W17_qaoa_dense_5q_v2"
+      ]
+    },
+    {
+      "group_id": "G10",
+      "width_type": "5Q_homogeneous",
+      "workloads": [
+        "W27_qaoa_sparse_5q_v2",
+        "W37_chem_ansatz_5q_v2",
+        "W47_dense_ent_5q_v2",
+        "W57_trotter_5q_v2"
+      ]
+    },
+    {
+      "group_id": "G11",
+      "width_type": "5Q_homogeneous",
+      "workloads": [
+        "W08_qft_5q_v3",
+        "W18_qaoa_dense_5q_v3",
+        "W28_qaoa_sparse_5q_v3",
+        "W38_chem_ansatz_5q_v3"
+      ]
+    },
+    {
+      "group_id": "G12",
+      "width_type": "5Q_homogeneous",
+      "workloads": [
+        "W48_dense_ent_5q_v3",
+        "W58_trotter_5q_v3",
+        "W09_qft_5q_v4",
+        "W19_qaoa_dense_5q_v4"
+      ]
+    },
+    {
+      "group_id": "G13",
+      "width_type": "5Q_homogeneous",
+      "workloads": [
+        "W29_qaoa_sparse_5q_v4",
+        "W39_chem_ansatz_5q_v4",
+        "W49_dense_ent_5q_v4",
+        "W59_trotter_5q_v4"
+      ]
+    },
+    {
+      "group_id": "G14",
+      "width_type": "5Q_homogeneous",
+      "workloads": [
+        "W10_qft_5q_v5",
+        "W20_qaoa_dense_5q_v5",
+        "W30_qaoa_sparse_5q_v5",
+        "W40_chem_ansatz_5q_v5"
+      ]
+    },
+    {
+      "group_id": "G15",
+      "width_type": "4Q_5Q_mixed",
+      "workloads": [
+        "W45_dense_ent_4q_v5",
+        "W55_trotter_4q_v5",
+        "W50_dense_ent_5q_v5",
+        "W60_trotter_5q_v5"
+      ]
+    }
+  ],
+  "workloads": {
+    "W01_qft_4q_v1": {
+      "id": "W01_qft_4q_v1",
+      "family": "F1_qft",
+      "n_qubits": 4,
+      "depth_tier": 1,
+      "group_id": "G01",
+      "pos_in_group": 0,
+      "observable_meta": {
+        "type": "distribution_overlap"
+      },
+      "ideal_probs": {
+        "0000": 0.2153905992724899,
+        "1000": 0.25783717244973714,
+        "0100": 0.004801544517299074,
+        "1100": 0.04401945518781686,
+        "0010": 0.0025085894796222194,
+        "1010": 0.01110446122819706,
+        "0110": 0.012377466546504283,
+        "1110": 0.03759154973350539,
+        "0001": 0.01559161106111937,
+        "1001": 0.035551715154474806,
+        "0101": 0.00529438308298759,
+        "1101": 0.030947084908350162,
+        "0011": 0.00038055262917097333,
+        "1011": 0.0030244984455366653,
+        "0111": 0.1254611749710358,
+        "1111": 0.19811814133215233
+      },
+      "sabre_def": {
+        "n_2q": 18,
+        "n_1q": 63,
+        "depth": 49,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 18,
+        "n_1q": 62,
+        "depth": 51,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 16,
+        "n_1q": 59,
+        "depth": 35,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "sabre_buf": {
+        "n_2q": 18,
+        "n_1q": 63,
+        "depth": 40,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "tket_buf": {
+        "n_2q": 18,
+        "n_1q": 62,
+        "depth": 51,
+        "region_id": "Buffered_Sub5_1"
+      }
+    },
+    "W11_qaoa_dense_4q_v1": {
+      "id": "W11_qaoa_dense_4q_v1",
+      "family": "F2_qaoa_dense",
+      "n_qubits": 4,
+      "depth_tier": 1,
+      "group_id": "G01",
+      "pos_in_group": 1,
+      "observable_meta": {
+        "type": "maxcut_qaoa",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "weights": {
+          "0_1": 1.0751,
+          "0_2": 1.1564,
+          "0_3": 0.527,
+          "1_2": 1.0066,
+          "1_3": 1.1472,
+          "2_3": 0.7691
+        },
+        "p_layers": 1
+      },
+      "ideal_probs": {
+        "0000": 0.20964219051976146,
+        "1000": 0.0021011030199793537,
+        "0100": 0.043866428808141636,
+        "1100": 0.040083662558283564,
+        "0010": 0.004744618343715101,
+        "1010": 0.02625422013519107,
+        "0110": 0.1365722540463056,
+        "1110": 0.036735522568622066,
+        "0001": 0.036735522568622066,
+        "1001": 0.1365722540463056,
+        "0101": 0.02625422013519107,
+        "1101": 0.004744618343715101,
+        "0011": 0.040083662558283564,
+        "1011": 0.043866428808141636,
+        "0111": 0.0021011030199793537,
+        "1111": 0.20964219051976146
+      },
+      "sabre_def": {
+        "n_2q": 18,
+        "n_1q": 61,
+        "depth": 52,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 18,
+        "n_1q": 56,
+        "depth": 48,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 14,
+        "n_1q": 55,
+        "depth": 38,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "sabre_buf": {
+        "n_2q": 18,
+        "n_1q": 59,
+        "depth": 33,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "tket_buf": {
+        "n_2q": 21,
+        "n_1q": 70,
+        "depth": 55,
+        "region_id": "Buffered_Sub5_2"
+      }
+    },
+    "W21_qaoa_sparse_4q_v1": {
+      "id": "W21_qaoa_sparse_4q_v1",
+      "family": "F3_qaoa_sparse",
+      "n_qubits": 4,
+      "depth_tier": 1,
+      "group_id": "G01",
+      "pos_in_group": 2,
+      "observable_meta": {
+        "type": "maxcut_qaoa",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        "weights": {
+          "0_1": 0.9492,
+          "1_2": 0.8625,
+          "2_3": 0.9369,
+          "3_0": 0.7554
+        },
+        "p_layers": 1
+      },
+      "ideal_probs": {
+        "0000": 0.2557208863422434,
+        "1000": 0.008784624879828984,
+        "0100": 0.004348892241173173,
+        "1100": 0.11374999731952651,
+        "0010": 0.004777543547986876,
+        "1010": 0.02650904806758234,
+        "0110": 0.07671460907934453,
+        "1110": 0.009394398522313711,
+        "0001": 0.009394398522313711,
+        "1001": 0.07671460907934453,
+        "0101": 0.02650904806758234,
+        "1101": 0.004777543547986876,
+        "0011": 0.11374999731952651,
+        "1011": 0.004348892241173173,
+        "0111": 0.008784624879828984,
+        "1111": 0.2557208863422434
+      },
+      "sabre_def": {
+        "n_2q": 8,
+        "n_1q": 32,
+        "depth": 25,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 8,
+        "n_1q": 29,
+        "depth": 26,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 8,
+        "n_1q": 32,
+        "depth": 25,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "sabre_buf": {
+        "n_2q": 8,
+        "n_1q": 32,
+        "depth": 25,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "tket_buf": {
+        "n_2q": 8,
+        "n_1q": 29,
+        "depth": 26,
+        "region_id": "Buffered_Sub5_3"
+      }
+    },
+    "W31_chem_ansatz_4q_v1": {
+      "id": "W31_chem_ansatz_4q_v1",
+      "family": "F4_chem_ansatz",
+      "n_qubits": 4,
+      "depth_tier": 1,
+      "group_id": "G01",
+      "pos_in_group": 3,
+      "observable_meta": {
+        "type": "circuit_benchmark_ansatz",
+        "layers": 1
+      },
+      "ideal_probs": {
+        "0000": 0.016393703686811686,
+        "1000": 0.05014945758558565,
+        "0100": 0.0459959866765749,
+        "1100": 0.276276275578745,
+        "0010": 0.009436303154967032,
+        "1010": 0.02886629488218972,
+        "0110": 0.00231600412471456,
+        "1110": 0.013911148342144805,
+        "0001": 0.02233104565499519,
+        "1001": 0.06831219157742126,
+        "0101": 0.06265444941812941,
+        "1101": 0.37633583241499113,
+        "0011": 0.004676002388068542,
+        "1011": 0.014304210196210199,
+        "0111": 0.0011476571534522427,
+        "1111": 0.006893437164998763
+      },
+      "sabre_def": {
+        "n_2q": 6,
+        "n_1q": 26,
+        "depth": 20,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 6,
+        "n_1q": 20,
+        "depth": 20,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 6,
+        "n_1q": 26,
+        "depth": 20,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "sabre_buf": {
+        "n_2q": 6,
+        "n_1q": 26,
+        "depth": 20,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "tket_buf": {
+        "n_2q": 6,
+        "n_1q": 20,
+        "depth": 20,
+        "region_id": "Buffered_Sub5_4"
+      }
+    },
+    "W41_dense_ent_4q_v1": {
+      "id": "W41_dense_ent_4q_v1",
+      "family": "F5_dense_entangler",
+      "n_qubits": 4,
+      "depth_tier": 1,
+      "group_id": "G02",
+      "pos_in_group": 0,
+      "observable_meta": {
+        "type": "distribution_overlap",
+        "rounds": 1
+      },
+      "ideal_probs": {
+        "0000": 0.1164568444657584,
+        "1000": 0.0007738203088081242,
+        "0100": 0.008909477281479913,
+        "1100": 0.0033706763011249327,
+        "0010": 0.02230379011964401,
+        "1010": 0.000933887916353159,
+        "0110": 0.19940839310572278,
+        "1110": 0.05410866916386402,
+        "0001": 0.0013848167523919138,
+        "1001": 0.1850112692805432,
+        "0101": 0.0021350734766568615,
+        "1101": 0.011783483045360902,
+        "0011": 0.0036787275933787915,
+        "1011": 0.03466676786135404,
+        "0111": 0.042680007084915386,
+        "1111": 0.3123942962426435
+      },
+      "sabre_def": {
+        "n_2q": 9,
+        "n_1q": 38,
+        "depth": 22,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 14,
+        "n_1q": 54,
+        "depth": 38,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 9,
+        "n_1q": 38,
+        "depth": 22,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "sabre_buf": {
+        "n_2q": 9,
+        "n_1q": 38,
+        "depth": 22,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "tket_buf": {
+        "n_2q": 14,
+        "n_1q": 54,
+        "depth": 38,
+        "region_id": "Buffered_Sub5_1"
+      }
+    },
+    "W51_trotter_4q_v1": {
+      "id": "W51_trotter_4q_v1",
+      "family": "F6_trotter",
+      "n_qubits": 4,
+      "depth_tier": 1,
+      "group_id": "G02",
+      "pos_in_group": 1,
+      "observable_meta": {
+        "type": "spin_chain_trotter",
+        "steps": 1,
+        "jx": 0.4245,
+        "jz": 0.3742,
+        "hx": 0.4525
+      },
+      "ideal_probs": {
+        "0000": 0.06297491548676014,
+        "1000": 0.056013568579378205,
+        "0100": 0.10129558177042276,
+        "1100": 0.052446435191346855,
+        "0010": 0.049826110449323203,
+        "1010": 0.29159176467210346,
+        "0110": 0.10235307191484297,
+        "1110": 0.02868153414412282,
+        "0001": 0.0037012944048782927,
+        "1001": 0.04489557296459683,
+        "0101": 0.0291462640002536,
+        "1101": 0.04262315418837114,
+        "0011": 0.0006512815533319072,
+        "1011": 0.06548216900441535,
+        "0111": 0.02031929344722931,
+        "1111": 0.0479979882286228
+      },
+      "sabre_def": {
+        "n_2q": 6,
+        "n_1q": 32,
+        "depth": 20,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 6,
+        "n_1q": 26,
+        "depth": 20,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 6,
+        "n_1q": 32,
+        "depth": 20,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "sabre_buf": {
+        "n_2q": 6,
+        "n_1q": 32,
+        "depth": 20,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "tket_buf": {
+        "n_2q": 6,
+        "n_1q": 26,
+        "depth": 20,
+        "region_id": "Buffered_Sub5_2"
+      }
+    },
+    "W02_qft_4q_v2": {
+      "id": "W02_qft_4q_v2",
+      "family": "F1_qft",
+      "n_qubits": 4,
+      "depth_tier": 2,
+      "group_id": "G02",
+      "pos_in_group": 2,
+      "observable_meta": {
+        "type": "distribution_overlap"
+      },
+      "ideal_probs": {
+        "0000": 0.2575878979761609,
+        "1000": 0.0133911006216838,
+        "0100": 0.03409855471942188,
+        "1100": 0.0837360575745866,
+        "0010": 0.1407407458558932,
+        "1010": 0.06942152112808268,
+        "0110": 0.01235105647045812,
+        "1110": 0.3681888529634932,
+        "0001": 0.001631488538112521,
+        "1001": 0.00032079586433669707,
+        "0101": 0.00022358506191618284,
+        "1101": 0.001457774972181479,
+        "0011": 0.002083562218377689,
+        "1011": 0.0022768175550796684,
+        "0111": 3.8892832451400855e-05,
+        "1111": 0.012451295647763134
+      },
+      "sabre_def": {
+        "n_2q": 18,
+        "n_1q": 63,
+        "depth": 49,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 18,
+        "n_1q": 62,
+        "depth": 51,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 16,
+        "n_1q": 60,
+        "depth": 35,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "sabre_buf": {
+        "n_2q": 18,
+        "n_1q": 63,
+        "depth": 40,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "tket_buf": {
+        "n_2q": 18,
+        "n_1q": 62,
+        "depth": 51,
+        "region_id": "Buffered_Sub5_3"
+      }
+    },
+    "W12_qaoa_dense_4q_v2": {
+      "id": "W12_qaoa_dense_4q_v2",
+      "family": "F2_qaoa_dense",
+      "n_qubits": 4,
+      "depth_tier": 2,
+      "group_id": "G02",
+      "pos_in_group": 3,
+      "observable_meta": {
+        "type": "maxcut_qaoa",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "weights": {
+          "0_1": 0.9237,
+          "0_2": 0.7037,
+          "0_3": 0.9751,
+          "1_2": 1.4621,
+          "1_3": 0.932,
+          "2_3": 0.8374
+        },
+        "p_layers": 1
+      },
+      "ideal_probs": {
+        "0000": 0.13984470582135522,
+        "1000": 0.07541985000661501,
+        "0100": 0.10899057166888469,
+        "1100": 0.02538356561316812,
+        "0010": 0.030362819228334132,
+        "1010": 0.0403879960857639,
+        "0110": 0.03886693893599899,
+        "1110": 0.04074355263987947,
+        "0001": 0.04074355263987947,
+        "1001": 0.03886693893599899,
+        "0101": 0.0403879960857639,
+        "1101": 0.030362819228334132,
+        "0011": 0.02538356561316812,
+        "1011": 0.10899057166888469,
+        "0111": 0.07541985000661501,
+        "1111": 0.13984470582135522
+      },
+      "sabre_def": {
+        "n_2q": 18,
+        "n_1q": 60,
+        "depth": 51,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 18,
+        "n_1q": 55,
+        "depth": 48,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 14,
+        "n_1q": 57,
+        "depth": 38,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "sabre_buf": {
+        "n_2q": 18,
+        "n_1q": 57,
+        "depth": 33,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "tket_buf": {
+        "n_2q": 21,
+        "n_1q": 69,
+        "depth": 55,
+        "region_id": "Buffered_Sub5_4"
+      }
+    },
+    "W22_qaoa_sparse_4q_v2": {
+      "id": "W22_qaoa_sparse_4q_v2",
+      "family": "F3_qaoa_sparse",
+      "n_qubits": 4,
+      "depth_tier": 2,
+      "group_id": "G03",
+      "pos_in_group": 0,
+      "observable_meta": {
+        "type": "maxcut_qaoa",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "weights": {
+          "0_1": 1.3342,
+          "1_2": 1.2639,
+          "2_3": 1.2352,
+          "3_0": 1.1757,
+          "0_2": 0.6531
+        },
+        "p_layers": 1
+      },
+      "ideal_probs": {
+        "0000": 0.008345999796914567,
+        "1000": 0.009598910062177259,
+        "0100": 0.023782762807335083,
+        "1100": 0.057366398783402495,
+        "0010": 0.00870826301191542,
+        "1010": 0.30491644037734406,
+        "0110": 0.033744429611280706,
+        "1110": 0.053536795549630166,
+        "0001": 0.053536795549630166,
+        "1001": 0.033744429611280706,
+        "0101": 0.30491644037734406,
+        "1101": 0.00870826301191542,
+        "0011": 0.057366398783402495,
+        "1011": 0.023782762807335083,
+        "0111": 0.009598910062177259,
+        "1111": 0.008345999796914567
+      },
+      "sabre_def": {
+        "n_2q": 13,
+        "n_1q": 46,
+        "depth": 33,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 13,
+        "n_1q": 44,
+        "depth": 41,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 11,
+        "n_1q": 47,
+        "depth": 35,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "sabre_buf": {
+        "n_2q": 13,
+        "n_1q": 46,
+        "depth": 33,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "tket_buf": {
+        "n_2q": 13,
+        "n_1q": 46,
+        "depth": 41,
+        "region_id": "Buffered_Sub5_1"
+      }
+    },
+    "W32_chem_ansatz_4q_v2": {
+      "id": "W32_chem_ansatz_4q_v2",
+      "family": "F4_chem_ansatz",
+      "n_qubits": 4,
+      "depth_tier": 2,
+      "group_id": "G03",
+      "pos_in_group": 1,
+      "observable_meta": {
+        "type": "circuit_benchmark_ansatz",
+        "layers": 2
+      },
+      "ideal_probs": {
+        "0000": 0.0016447621331226831,
+        "1000": 0.07706109606332287,
+        "0100": 0.05692268702299143,
+        "1100": 0.39621355347764625,
+        "0010": 0.001391617445365502,
+        "1010": 0.03637356733178556,
+        "0110": 0.005917051896767299,
+        "1110": 0.03367007270986559,
+        "0001": 0.0005992282371381266,
+        "1001": 0.03582008774595672,
+        "0101": 0.03174223215526505,
+        "1101": 0.20088082896774045,
+        "0011": 0.003569796094817722,
+        "1011": 0.11198549258942792,
+        "0111": 0.0018929627433062314,
+        "1111": 0.004314963385480117
+      },
+      "sabre_def": {
+        "n_2q": 12,
+        "n_1q": 43,
+        "depth": 32,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 12,
+        "n_1q": 38,
+        "depth": 32,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 12,
+        "n_1q": 43,
+        "depth": 32,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "sabre_buf": {
+        "n_2q": 12,
+        "n_1q": 43,
+        "depth": 32,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "tket_buf": {
+        "n_2q": 12,
+        "n_1q": 38,
+        "depth": 32,
+        "region_id": "Buffered_Sub5_2"
+      }
+    },
+    "W42_dense_ent_4q_v2": {
+      "id": "W42_dense_ent_4q_v2",
+      "family": "F5_dense_entangler",
+      "n_qubits": 4,
+      "depth_tier": 2,
+      "group_id": "G03",
+      "pos_in_group": 2,
+      "observable_meta": {
+        "type": "distribution_overlap",
+        "rounds": 1
+      },
+      "ideal_probs": {
+        "0000": 0.17778499860719169,
+        "1000": 0.017686719750112673,
+        "0100": 0.029829100498300575,
+        "1100": 0.017388999317663228,
+        "0010": 0.19470743588151188,
+        "1010": 0.044906349854356035,
+        "0110": 0.0439764921453859,
+        "1110": 0.009342240214608872,
+        "0001": 0.01909967692089198,
+        "1001": 0.12564170332383975,
+        "0101": 0.025941063386899377,
+        "1101": 0.0062123855853002865,
+        "0011": 0.013040443553509891,
+        "1011": 0.13450526253802567,
+        "0111": 0.007690734426032248,
+        "1111": 0.13224639399636975
+      },
+      "sabre_def": {
+        "n_2q": 9,
+        "n_1q": 36,
+        "depth": 23,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 14,
+        "n_1q": 54,
+        "depth": 38,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 9,
+        "n_1q": 36,
+        "depth": 23,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "sabre_buf": {
+        "n_2q": 9,
+        "n_1q": 36,
+        "depth": 23,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "tket_buf": {
+        "n_2q": 14,
+        "n_1q": 54,
+        "depth": 38,
+        "region_id": "Buffered_Sub5_3"
+      }
+    },
+    "W52_trotter_4q_v2": {
+      "id": "W52_trotter_4q_v2",
+      "family": "F6_trotter",
+      "n_qubits": 4,
+      "depth_tier": 2,
+      "group_id": "G03",
+      "pos_in_group": 3,
+      "observable_meta": {
+        "type": "spin_chain_trotter",
+        "steps": 1,
+        "jx": 0.5636,
+        "jz": 0.3314,
+        "hx": 0.2328
+      },
+      "ideal_probs": {
+        "0000": 0.004864022857546386,
+        "1000": 0.03505481724154863,
+        "0100": 0.16619225568241083,
+        "1100": 0.10974065610785921,
+        "0010": 0.004742710501902996,
+        "1010": 0.03249271275782399,
+        "0110": 0.13943527707940892,
+        "1110": 0.019696246428678316,
+        "0001": 0.018565574184437193,
+        "1001": 0.03774020102974427,
+        "0101": 0.3606692560672971,
+        "1101": 0.04023098258958738,
+        "0011": 0.0011499508419700209,
+        "1011": 0.0029210595886559015,
+        "0111": 0.017643067194318893,
+        "1111": 0.008861209846810908
+      },
+      "sabre_def": {
+        "n_2q": 9,
+        "n_1q": 44,
+        "depth": 29,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 9,
+        "n_1q": 42,
+        "depth": 29,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 9,
+        "n_1q": 44,
+        "depth": 29,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "sabre_buf": {
+        "n_2q": 9,
+        "n_1q": 44,
+        "depth": 29,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "tket_buf": {
+        "n_2q": 9,
+        "n_1q": 42,
+        "depth": 29,
+        "region_id": "Buffered_Sub5_4"
+      }
+    },
+    "W03_qft_4q_v3": {
+      "id": "W03_qft_4q_v3",
+      "family": "F1_qft",
+      "n_qubits": 4,
+      "depth_tier": 3,
+      "group_id": "G04",
+      "pos_in_group": 0,
+      "observable_meta": {
+        "type": "distribution_overlap"
+      },
+      "ideal_probs": {
+        "0000": 0.13154736572921738,
+        "1000": 0.07462278937511457,
+        "0100": 0.056190656949601125,
+        "1100": 0.07494326787951636,
+        "0010": 0.019135634054980793,
+        "1010": 0.1936237245369808,
+        "0110": 0.03732599689201258,
+        "1110": 0.053508670558676995,
+        "0001": 0.0229716631146708,
+        "1001": 0.054848781615389766,
+        "0101": 0.016738883903111627,
+        "1101": 0.07554167612776148,
+        "0011": 0.04889350507588775,
+        "1011": 0.01885402382321485,
+        "0111": 0.049285397231382325,
+        "1111": 0.07196796313248001
+      },
+      "sabre_def": {
+        "n_2q": 21,
+        "n_1q": 73,
+        "depth": 56,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 21,
+        "n_1q": 74,
+        "depth": 57,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 19,
+        "n_1q": 70,
+        "depth": 47,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "sabre_buf": {
+        "n_2q": 21,
+        "n_1q": 73,
+        "depth": 51,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "tket_buf": {
+        "n_2q": 21,
+        "n_1q": 74,
+        "depth": 57,
+        "region_id": "Buffered_Sub5_1"
+      }
+    },
+    "W13_qaoa_dense_4q_v3": {
+      "id": "W13_qaoa_dense_4q_v3",
+      "family": "F2_qaoa_dense",
+      "n_qubits": 4,
+      "depth_tier": 3,
+      "group_id": "G04",
+      "pos_in_group": 1,
+      "observable_meta": {
+        "type": "maxcut_qaoa",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "weights": {
+          "0_1": 1.3888,
+          "0_2": 1.4607,
+          "0_3": 1.1581,
+          "1_2": 0.6513,
+          "1_3": 1.1925,
+          "2_3": 0.6521
+        },
+        "p_layers": 2
+      },
+      "ideal_probs": {
+        "0000": 0.20699535431775157,
+        "1000": 0.10444396694589224,
+        "0100": 0.07142715260839494,
+        "1100": 0.003544100444236015,
+        "0010": 0.03473194634351462,
+        "1010": 0.030978545201490074,
+        "0110": 0.003356151331271026,
+        "1110": 0.04452278280744947,
+        "0001": 0.04452278280744947,
+        "1001": 0.003356151331271026,
+        "0101": 0.030978545201490074,
+        "1101": 0.03473194634351462,
+        "0011": 0.003544100444236015,
+        "1011": 0.07142715260839494,
+        "0111": 0.10444396694589224,
+        "1111": 0.20699535431775157
+      },
+      "sabre_def": {
+        "n_2q": 33,
+        "n_1q": 96,
+        "depth": 90,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 36,
+        "n_1q": 106,
+        "depth": 84,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 30,
+        "n_1q": 99,
+        "depth": 64,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "sabre_buf": {
+        "n_2q": 30,
+        "n_1q": 103,
+        "depth": 65,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "tket_buf": {
+        "n_2q": 39,
+        "n_1q": 121,
+        "depth": 89,
+        "region_id": "Buffered_Sub5_2"
+      }
+    },
+    "W23_qaoa_sparse_4q_v3": {
+      "id": "W23_qaoa_sparse_4q_v3",
+      "family": "F3_qaoa_sparse",
+      "n_qubits": 4,
+      "depth_tier": 3,
+      "group_id": "G04",
+      "pos_in_group": 2,
+      "observable_meta": {
+        "type": "maxcut_qaoa",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        "weights": {
+          "0_1": 0.7187,
+          "1_2": 1.025,
+          "2_3": 1.0947,
+          "3_0": 0.9335
+        },
+        "p_layers": 2
+      },
+      "ideal_probs": {
+        "0000": 0.041012852316088255,
+        "1000": 0.05829359224282116,
+        "0100": 0.059750105974909616,
+        "1100": 0.10082779168385107,
+        "0010": 0.06235349111202177,
+        "1010": 0.03200842045434547,
+        "0110": 0.08422256091974709,
+        "1110": 0.061531185296215256,
+        "0001": 0.061531185296215256,
+        "1001": 0.08422256091974709,
+        "0101": 0.03200842045434547,
+        "1101": 0.06235349111202177,
+        "0011": 0.10082779168385107,
+        "1011": 0.059750105974909616,
+        "0111": 0.05829359224282116,
+        "1111": 0.041012852316088255
+      },
+      "sabre_def": {
+        "n_2q": 16,
+        "n_1q": 58,
+        "depth": 50,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 16,
+        "n_1q": 53,
+        "depth": 50,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 16,
+        "n_1q": 58,
+        "depth": 50,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "sabre_buf": {
+        "n_2q": 16,
+        "n_1q": 58,
+        "depth": 50,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "tket_buf": {
+        "n_2q": 16,
+        "n_1q": 53,
+        "depth": 50,
+        "region_id": "Buffered_Sub5_3"
+      }
+    },
+    "W33_chem_ansatz_4q_v3": {
+      "id": "W33_chem_ansatz_4q_v3",
+      "family": "F4_chem_ansatz",
+      "n_qubits": 4,
+      "depth_tier": 3,
+      "group_id": "G04",
+      "pos_in_group": 3,
+      "observable_meta": {
+        "type": "circuit_benchmark_ansatz",
+        "layers": 2
+      },
+      "ideal_probs": {
+        "0000": 0.0056669168562307765,
+        "1000": 0.0031705841077761606,
+        "0100": 0.24504700475806623,
+        "1100": 0.21785631876149167,
+        "0010": 0.01409766390493572,
+        "1010": 0.001505215284072581,
+        "0110": 0.032032638491102265,
+        "1110": 0.01766404402090149,
+        "0001": 0.0006255454433287511,
+        "1001": 0.0026224031864545056,
+        "0101": 0.14642755237147784,
+        "1101": 0.13777182519520367,
+        "0011": 0.019110865935286905,
+        "1011": 0.0026368626694360463,
+        "0111": 0.0909323279337538,
+        "1111": 0.06283223108048182
+      },
+      "sabre_def": {
+        "n_2q": 12,
+        "n_1q": 41,
+        "depth": 32,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 12,
+        "n_1q": 38,
+        "depth": 32,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 12,
+        "n_1q": 41,
+        "depth": 32,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "sabre_buf": {
+        "n_2q": 12,
+        "n_1q": 41,
+        "depth": 32,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "tket_buf": {
+        "n_2q": 12,
+        "n_1q": 38,
+        "depth": 32,
+        "region_id": "Buffered_Sub5_4"
+      }
+    },
+    "W43_dense_ent_4q_v3": {
+      "id": "W43_dense_ent_4q_v3",
+      "family": "F5_dense_entangler",
+      "n_qubits": 4,
+      "depth_tier": 3,
+      "group_id": "G05",
+      "pos_in_group": 0,
+      "observable_meta": {
+        "type": "distribution_overlap",
+        "rounds": 2
+      },
+      "ideal_probs": {
+        "0000": 0.32882882264995855,
+        "1000": 0.005219718504897513,
+        "0100": 0.06947200255777064,
+        "1100": 0.03585748735936776,
+        "0010": 0.019068131185772004,
+        "1010": 0.17621722619537122,
+        "0110": 0.019814614085520835,
+        "1110": 0.049134709376059967,
+        "0001": 0.13660863160082662,
+        "1001": 0.014466080138941717,
+        "0101": 0.007484423181594632,
+        "1101": 0.012330457401638219,
+        "0011": 0.027062341638918457,
+        "1011": 0.056723241489988474,
+        "0111": 0.009956971020507242,
+        "1111": 0.031755141612866244
+      },
+      "sabre_def": {
+        "n_2q": 25,
+        "n_1q": 83,
+        "depth": 54,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 28,
+        "n_1q": 102,
+        "depth": 74,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 21,
+        "n_1q": 79,
+        "depth": 51,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "sabre_buf": {
+        "n_2q": 21,
+        "n_1q": 79,
+        "depth": 51,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "tket_buf": {
+        "n_2q": 28,
+        "n_1q": 102,
+        "depth": 74,
+        "region_id": "Buffered_Sub5_1"
+      }
+    },
+    "W53_trotter_4q_v3": {
+      "id": "W53_trotter_4q_v3",
+      "family": "F6_trotter",
+      "n_qubits": 4,
+      "depth_tier": 3,
+      "group_id": "G05",
+      "pos_in_group": 1,
+      "observable_meta": {
+        "type": "spin_chain_trotter",
+        "steps": 2,
+        "jx": 0.6262,
+        "jz": 0.5825,
+        "hx": 0.3081
+      },
+      "ideal_probs": {
+        "0000": 0.024255250670809102,
+        "1000": 0.07429606630275234,
+        "0100": 0.1415088998326297,
+        "1100": 0.012564476712437402,
+        "0010": 0.00647528017918201,
+        "1010": 0.15928977927659296,
+        "0110": 0.1014794064470318,
+        "1110": 0.056003512608100665,
+        "0001": 0.006880258695442211,
+        "1001": 0.08910840757837672,
+        "0101": 0.16579071904973272,
+        "1101": 0.0009577543735331514,
+        "0011": 0.05295680953168428,
+        "1011": 0.03884658172628541,
+        "0111": 0.020093294926629087,
+        "1111": 0.0494935020887803
+      },
+      "sabre_def": {
+        "n_2q": 12,
+        "n_1q": 54,
+        "depth": 32,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 12,
+        "n_1q": 46,
+        "depth": 32,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 12,
+        "n_1q": 54,
+        "depth": 32,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "sabre_buf": {
+        "n_2q": 12,
+        "n_1q": 54,
+        "depth": 32,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "tket_buf": {
+        "n_2q": 12,
+        "n_1q": 46,
+        "depth": 32,
+        "region_id": "Buffered_Sub5_2"
+      }
+    },
+    "W04_qft_4q_v4": {
+      "id": "W04_qft_4q_v4",
+      "family": "F1_qft",
+      "n_qubits": 4,
+      "depth_tier": 4,
+      "group_id": "G05",
+      "pos_in_group": 2,
+      "observable_meta": {
+        "type": "distribution_overlap"
+      },
+      "ideal_probs": {
+        "0000": 0.1138867160896892,
+        "1000": 0.022073896473829843,
+        "0100": 0.06658514153832569,
+        "1100": 0.06386514330503783,
+        "0010": 0.0011028148352324007,
+        "1010": 0.1130845591305187,
+        "0110": 0.018193206578293052,
+        "1110": 0.11729261003594997,
+        "0001": 0.005556915462887078,
+        "1001": 0.09678629430179705,
+        "0101": 0.0038351977148987733,
+        "1101": 0.13206368603594495,
+        "0011": 0.11211180390400027,
+        "1011": 0.019123942316835774,
+        "0111": 0.06714768510565575,
+        "1111": 0.04729038717110304
+      },
+      "sabre_def": {
+        "n_2q": 21,
+        "n_1q": 71,
+        "depth": 55,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 21,
+        "n_1q": 74,
+        "depth": 57,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 19,
+        "n_1q": 72,
+        "depth": 48,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "sabre_buf": {
+        "n_2q": 21,
+        "n_1q": 74,
+        "depth": 52,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "tket_buf": {
+        "n_2q": 21,
+        "n_1q": 74,
+        "depth": 57,
+        "region_id": "Buffered_Sub5_3"
+      }
+    },
+    "W14_qaoa_dense_4q_v4": {
+      "id": "W14_qaoa_dense_4q_v4",
+      "family": "F2_qaoa_dense",
+      "n_qubits": 4,
+      "depth_tier": 4,
+      "group_id": "G05",
+      "pos_in_group": 3,
+      "observable_meta": {
+        "type": "maxcut_qaoa",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "weights": {
+          "0_1": 0.7946,
+          "0_2": 1.3812,
+          "0_3": 1.1513,
+          "1_2": 1.4984,
+          "1_3": 1.4821,
+          "2_3": 0.642
+        },
+        "p_layers": 2
+      },
+      "ideal_probs": {
+        "0000": 0.054578600136555494,
+        "1000": 0.02357250809457639,
+        "0100": 0.0273489010626059,
+        "1100": 0.14383489942680458,
+        "0010": 0.011460178789675254,
+        "1010": 0.09663603956141982,
+        "0110": 0.1124100334109765,
+        "1110": 0.03015883951738538,
+        "0001": 0.03015883951738538,
+        "1001": 0.1124100334109765,
+        "0101": 0.09663603956141982,
+        "1101": 0.011460178789675254,
+        "0011": 0.14383489942680458,
+        "1011": 0.0273489010626059,
+        "0111": 0.02357250809457639,
+        "1111": 0.054578600136555494
+      },
+      "sabre_def": {
+        "n_2q": 33,
+        "n_1q": 103,
+        "depth": 91,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 36,
+        "n_1q": 106,
+        "depth": 84,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 30,
+        "n_1q": 104,
+        "depth": 63,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "sabre_buf": {
+        "n_2q": 30,
+        "n_1q": 106,
+        "depth": 65,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "tket_buf": {
+        "n_2q": 39,
+        "n_1q": 121,
+        "depth": 89,
+        "region_id": "Buffered_Sub5_4"
+      }
+    },
+    "W24_qaoa_sparse_4q_v4": {
+      "id": "W24_qaoa_sparse_4q_v4",
+      "family": "F3_qaoa_sparse",
+      "n_qubits": 4,
+      "depth_tier": 4,
+      "group_id": "G06",
+      "pos_in_group": 0,
+      "observable_meta": {
+        "type": "maxcut_qaoa",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "weights": {
+          "0_1": 0.6498,
+          "1_2": 1.3092,
+          "2_3": 1.0603,
+          "3_0": 1.1519,
+          "0_2": 0.724
+        },
+        "p_layers": 2
+      },
+      "ideal_probs": {
+        "0000": 0.08515745366204606,
+        "1000": 0.037198913598750175,
+        "0100": 0.04705945963914358,
+        "1100": 0.08723162954999404,
+        "0010": 0.03816210831352823,
+        "1010": 0.10785266834253489,
+        "0110": 0.03261405404968427,
+        "1110": 0.06472371284431842,
+        "0001": 0.06472371284431842,
+        "1001": 0.03261405404968427,
+        "0101": 0.10785266834253489,
+        "1101": 0.03816210831352823,
+        "0011": 0.08723162954999404,
+        "1011": 0.04705945963914358,
+        "0111": 0.037198913598750175,
+        "1111": 0.08515745366204606
+      },
+      "sabre_def": {
+        "n_2q": 27,
+        "n_1q": 90,
+        "depth": 77,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 29,
+        "n_1q": 95,
+        "depth": 83,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 27,
+        "n_1q": 91,
+        "depth": 70,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "sabre_buf": {
+        "n_2q": 27,
+        "n_1q": 90,
+        "depth": 77,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "tket_buf": {
+        "n_2q": 29,
+        "n_1q": 99,
+        "depth": 88,
+        "region_id": "Buffered_Sub5_1"
+      }
+    },
+    "W34_chem_ansatz_4q_v4": {
+      "id": "W34_chem_ansatz_4q_v4",
+      "family": "F4_chem_ansatz",
+      "n_qubits": 4,
+      "depth_tier": 4,
+      "group_id": "G06",
+      "pos_in_group": 1,
+      "observable_meta": {
+        "type": "circuit_benchmark_ansatz",
+        "layers": 3
+      },
+      "ideal_probs": {
+        "0000": 0.05192885859163124,
+        "1000": 0.10337818675541653,
+        "0100": 0.17377702781512222,
+        "1100": 0.15876986511823796,
+        "0010": 0.0014895352391487017,
+        "1010": 0.014361060283752952,
+        "0110": 0.08086666847009254,
+        "1110": 0.05553607469980409,
+        "0001": 0.007326261675910666,
+        "1001": 0.0024947113437202065,
+        "0101": 0.09147802679014898,
+        "1101": 0.06506095428829545,
+        "0011": 0.0005934236312804241,
+        "1011": 0.031176337108997414,
+        "0111": 0.09799111285772823,
+        "1111": 0.0637718953307122
+      },
+      "sabre_def": {
+        "n_2q": 18,
+        "n_1q": 66,
+        "depth": 44,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 18,
+        "n_1q": 56,
+        "depth": 44,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 18,
+        "n_1q": 66,
+        "depth": 44,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "sabre_buf": {
+        "n_2q": 18,
+        "n_1q": 66,
+        "depth": 44,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "tket_buf": {
+        "n_2q": 18,
+        "n_1q": 56,
+        "depth": 44,
+        "region_id": "Buffered_Sub5_2"
+      }
+    },
+    "W44_dense_ent_4q_v4": {
+      "id": "W44_dense_ent_4q_v4",
+      "family": "F5_dense_entangler",
+      "n_qubits": 4,
+      "depth_tier": 4,
+      "group_id": "G06",
+      "pos_in_group": 2,
+      "observable_meta": {
+        "type": "distribution_overlap",
+        "rounds": 2
+      },
+      "ideal_probs": {
+        "0000": 0.18678177422954403,
+        "1000": 0.07301426417332009,
+        "0100": 0.02309731532631834,
+        "1100": 0.026270617941249557,
+        "0010": 0.006000283415916064,
+        "1010": 0.27349770530127276,
+        "0110": 0.08812314642203838,
+        "1110": 0.01630739487042133,
+        "0001": 0.16537420364431124,
+        "1001": 0.03203225891615521,
+        "0101": 0.03120424803733977,
+        "1101": 0.010236056276412511,
+        "0011": 0.038030796325206326,
+        "1011": 0.00830846639291323,
+        "0111": 0.0009098935042807382,
+        "1111": 0.020811575223300238
+      },
+      "sabre_def": {
+        "n_2q": 25,
+        "n_1q": 82,
+        "depth": 54,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 28,
+        "n_1q": 102,
+        "depth": 74,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 21,
+        "n_1q": 77,
+        "depth": 49,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "sabre_buf": {
+        "n_2q": 21,
+        "n_1q": 77,
+        "depth": 49,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "tket_buf": {
+        "n_2q": 28,
+        "n_1q": 102,
+        "depth": 74,
+        "region_id": "Buffered_Sub5_3"
+      }
+    },
+    "W54_trotter_4q_v4": {
+      "id": "W54_trotter_4q_v4",
+      "family": "F6_trotter",
+      "n_qubits": 4,
+      "depth_tier": 4,
+      "group_id": "G06",
+      "pos_in_group": 3,
+      "observable_meta": {
+        "type": "spin_chain_trotter",
+        "steps": 2,
+        "jx": 0.6646,
+        "jz": 0.3019,
+        "hx": 0.2048
+      },
+      "ideal_probs": {
+        "0000": 0.008846421650580688,
+        "1000": 0.1680049275505212,
+        "0100": 0.015735108609232218,
+        "1100": 0.0057607010428212405,
+        "0010": 0.022839837011516605,
+        "1010": 0.3128519809320874,
+        "0110": 0.007528165485876683,
+        "1110": 0.029684512805778628,
+        "0001": 0.1127639883747208,
+        "1001": 0.1420342537545399,
+        "0101": 0.05334386166091975,
+        "1101": 0.030117510568170632,
+        "0011": 0.062351228625280336,
+        "1011": 0.019708912849083778,
+        "0111": 0.001653780326403129,
+        "1111": 0.0067748087524663455
+      },
+      "sabre_def": {
+        "n_2q": 18,
+        "n_1q": 77,
+        "depth": 46,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 18,
+        "n_1q": 76,
+        "depth": 47,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 18,
+        "n_1q": 77,
+        "depth": 46,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "sabre_buf": {
+        "n_2q": 18,
+        "n_1q": 77,
+        "depth": 46,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "tket_buf": {
+        "n_2q": 18,
+        "n_1q": 76,
+        "depth": 47,
+        "region_id": "Buffered_Sub5_4"
+      }
+    },
+    "W05_qft_4q_v5": {
+      "id": "W05_qft_4q_v5",
+      "family": "F1_qft",
+      "n_qubits": 4,
+      "depth_tier": 5,
+      "group_id": "G07",
+      "pos_in_group": 0,
+      "observable_meta": {
+        "type": "distribution_overlap"
+      },
+      "ideal_probs": {
+        "0000": 0.06749507419910473,
+        "1000": 0.05349566786443153,
+        "0100": 0.05183659617264441,
+        "1100": 0.0900453547875738,
+        "0010": 0.08475291513754904,
+        "1010": 0.06286390529128319,
+        "0110": 0.08718682811249033,
+        "1110": 0.05326350575369894,
+        "0001": 0.0903739963344819,
+        "1001": 0.022044036713338936,
+        "0101": 0.017015153253996267,
+        "1101": 0.11453134181397831,
+        "0011": 0.07694067007787171,
+        "1011": 0.03058234708313239,
+        "0111": 0.07395486556068105,
+        "1111": 0.023617741843743063
+      },
+      "sabre_def": {
+        "n_2q": 27,
+        "n_1q": 85,
+        "depth": 63,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 26,
+        "n_1q": 88,
+        "depth": 69,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 27,
+        "n_1q": 85,
+        "depth": 63,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "sabre_buf": {
+        "n_2q": 27,
+        "n_1q": 84,
+        "depth": 64,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "tket_buf": {
+        "n_2q": 26,
+        "n_1q": 86,
+        "depth": 66,
+        "region_id": "Buffered_Sub5_1"
+      }
+    },
+    "W15_qaoa_dense_4q_v5": {
+      "id": "W15_qaoa_dense_4q_v5",
+      "family": "F2_qaoa_dense",
+      "n_qubits": 4,
+      "depth_tier": 5,
+      "group_id": "G07",
+      "pos_in_group": 1,
+      "observable_meta": {
+        "type": "maxcut_qaoa",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "weights": {
+          "0_1": 1.1402,
+          "0_2": 0.7909,
+          "0_3": 1.4163,
+          "1_2": 1.1628,
+          "1_3": 1.0491,
+          "2_3": 0.5527
+        },
+        "p_layers": 2
+      },
+      "ideal_probs": {
+        "0000": 0.36567192446858454,
+        "1000": 0.004164835694841104,
+        "0100": 0.003995318461946904,
+        "1100": 0.00034096988011738055,
+        "0010": 0.0853551978674394,
+        "1010": 0.0044242500680911415,
+        "0110": 0.0007796638635595647,
+        "1110": 0.03526783969541961,
+        "0001": 0.03526783969541961,
+        "1001": 0.0007796638635595647,
+        "0101": 0.0044242500680911415,
+        "1101": 0.0853551978674394,
+        "0011": 0.00034096988011738055,
+        "1011": 0.003995318461946904,
+        "0111": 0.004164835694841104,
+        "1111": 0.36567192446858454
+      },
+      "sabre_def": {
+        "n_2q": 33,
+        "n_1q": 97,
+        "depth": 87,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 36,
+        "n_1q": 106,
+        "depth": 84,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 30,
+        "n_1q": 103,
+        "depth": 64,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "sabre_buf": {
+        "n_2q": 30,
+        "n_1q": 107,
+        "depth": 64,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "tket_buf": {
+        "n_2q": 39,
+        "n_1q": 121,
+        "depth": 89,
+        "region_id": "Buffered_Sub5_2"
+      }
+    },
+    "W25_qaoa_sparse_4q_v5": {
+      "id": "W25_qaoa_sparse_4q_v5",
+      "family": "F3_qaoa_sparse",
+      "n_qubits": 4,
+      "depth_tier": 5,
+      "group_id": "G07",
+      "pos_in_group": 2,
+      "observable_meta": {
+        "type": "maxcut_qaoa",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ]
+        ],
+        "weights": {
+          "0_1": 1.2812,
+          "1_2": 1.393,
+          "2_3": 0.9731,
+          "3_0": 1.0773
+        },
+        "p_layers": 3
+      },
+      "ideal_probs": {
+        "0000": 0.1490511235575013,
+        "1000": 0.056477833483894124,
+        "0100": 0.06613338479244019,
+        "1100": 0.10752625587168872,
+        "0010": 0.05771795082816171,
+        "1010": 0.025109587726216343,
+        "0110": 0.01513352040074852,
+        "1110": 0.022850343339348208,
+        "0001": 0.022850343339348208,
+        "1001": 0.01513352040074852,
+        "0101": 0.025109587726216343,
+        "1101": 0.05771795082816171,
+        "0011": 0.10752625587168872,
+        "1011": 0.06613338479244019,
+        "0111": 0.056477833483894124,
+        "1111": 0.1490511235575013
+      },
+      "sabre_def": {
+        "n_2q": 24,
+        "n_1q": 87,
+        "depth": 74,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 24,
+        "n_1q": 77,
+        "depth": 74,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 24,
+        "n_1q": 87,
+        "depth": 74,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "sabre_buf": {
+        "n_2q": 24,
+        "n_1q": 87,
+        "depth": 74,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "tket_buf": {
+        "n_2q": 24,
+        "n_1q": 77,
+        "depth": 74,
+        "region_id": "Buffered_Sub5_3"
+      }
+    },
+    "W35_chem_ansatz_4q_v5": {
+      "id": "W35_chem_ansatz_4q_v5",
+      "family": "F4_chem_ansatz",
+      "n_qubits": 4,
+      "depth_tier": 5,
+      "group_id": "G07",
+      "pos_in_group": 3,
+      "observable_meta": {
+        "type": "circuit_benchmark_ansatz",
+        "layers": 3
+      },
+      "ideal_probs": {
+        "0000": 0.24891828662447474,
+        "1000": 0.2050430783635499,
+        "0100": 0.11471110444246636,
+        "1100": 0.03521453269237051,
+        "0010": 0.002694608144611877,
+        "1010": 0.021357555584295602,
+        "0110": 0.054411343010724096,
+        "1110": 0.016371421062883737,
+        "0001": 0.0608555326559067,
+        "1001": 0.04123940358364973,
+        "0101": 0.002543976793078281,
+        "1101": 0.006125032126231709,
+        "0011": 0.07466846067521227,
+        "1011": 0.000998020191543948,
+        "0111": 0.05709032873398564,
+        "1111": 0.057757315315014136
+      },
+      "sabre_def": {
+        "n_2q": 18,
+        "n_1q": 62,
+        "depth": 44,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 18,
+        "n_1q": 56,
+        "depth": 44,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 18,
+        "n_1q": 62,
+        "depth": 44,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "sabre_buf": {
+        "n_2q": 18,
+        "n_1q": 62,
+        "depth": 44,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "tket_buf": {
+        "n_2q": 18,
+        "n_1q": 56,
+        "depth": 44,
+        "region_id": "Buffered_Sub5_4"
+      }
+    },
+    "W06_qft_5q_v1": {
+      "id": "W06_qft_5q_v1",
+      "family": "F1_qft",
+      "n_qubits": 5,
+      "depth_tier": 1,
+      "group_id": "G08",
+      "pos_in_group": 0,
+      "observable_meta": {
+        "type": "distribution_overlap"
+      },
+      "ideal_probs": {
+        "00000": 0.029503851807142538,
+        "10000": 0.007384891169056301,
+        "01000": 0.002865987783400926,
+        "11000": 0.020010818309357185,
+        "00100": 0.01397781457708314,
+        "10100": 0.017290540687768936,
+        "01100": 0.002813871435755125,
+        "11100": 0.11933051940007673,
+        "00010": 0.005475278562060629,
+        "10010": 0.003166456946270353,
+        "01010": 0.0005664700112225844,
+        "11010": 0.013931568662190648,
+        "00110": 0.008684901440448017,
+        "10110": 0.023656999002571687,
+        "01110": 0.009823692461024,
+        "11110": 0.11356537674499785,
+        "00001": 0.0016969641439794506,
+        "10001": 0.0006568532871796587,
+        "01001": 0.0001777077407685411,
+        "11001": 0.0022240719693751685,
+        "00101": 0.0034028111146694,
+        "10101": 0.006182719928795375,
+        "01101": 0.0018386813495288694,
+        "11101": 0.041387404845077844,
+        "00011": 0.03176286221104088,
+        "10011": 0.026938093968396918,
+        "01011": 0.0034491461191076232,
+        "11011": 0.15427991451510253,
+        "00111": 0.017752019879123258,
+        "10111": 0.07520574078120733,
+        "01111": 0.03201629452117068,
+        "11111": 0.20897967462504896
+      },
+      "sabre_def": {
+        "n_2q": 29,
+        "n_1q": 94,
+        "depth": 83,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 29,
+        "n_1q": 90,
+        "depth": 89,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 26,
+        "n_1q": 96,
+        "depth": 51,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "sabre_buf": {
+        "n_2q": 30,
+        "n_1q": 103,
+        "depth": 72,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "tket_buf": {
+        "n_2q": 32,
+        "n_1q": 104,
+        "depth": 74,
+        "region_id": "Buffered_Sub5_1"
+      }
+    },
+    "W16_qaoa_dense_5q_v1": {
+      "id": "W16_qaoa_dense_5q_v1",
+      "family": "F2_qaoa_dense",
+      "n_qubits": 5,
+      "depth_tier": 1,
+      "group_id": "G08",
+      "pos_in_group": 1,
+      "observable_meta": {
+        "type": "maxcut_qaoa",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        "weights": {
+          "0_1": 1.2177,
+          "0_2": 0.9839,
+          "0_3": 1.3051,
+          "0_4": 1.3973,
+          "1_2": 0.5168,
+          "1_3": 1.0917,
+          "1_4": 1.0071
+        },
+        "p_layers": 1
+      },
+      "ideal_probs": {
+        "00000": 0.012066408074521159,
+        "10000": 0.0060066396000936694,
+        "01000": 0.047687824292093936,
+        "11000": 0.07440880296164233,
+        "00100": 0.003739057714391868,
+        "10100": 0.04855352111879388,
+        "01100": 0.056426210006454876,
+        "11100": 0.032754928889401576,
+        "00010": 0.05166518487588526,
+        "10010": 0.01028921616636653,
+        "01010": 0.03328448499718494,
+        "11010": 0.016842951612360685,
+        "00110": 0.01965628846614381,
+        "10110": 0.022208756517983763,
+        "01110": 0.012232189232849407,
+        "11110": 0.05217753547383161,
+        "00001": 0.05217753547383161,
+        "10001": 0.012232189232849407,
+        "01001": 0.022208756517983763,
+        "11001": 0.01965628846614381,
+        "00101": 0.016842951612360685,
+        "10101": 0.03328448499718494,
+        "01101": 0.01028921616636653,
+        "11101": 0.05166518487588526,
+        "00011": 0.032754928889401576,
+        "10011": 0.056426210006454876,
+        "01011": 0.04855352111879388,
+        "11011": 0.003739057714391868,
+        "00111": 0.07440880296164233,
+        "10111": 0.047687824292093936,
+        "01111": 0.0060066396000936694,
+        "11111": 0.012066408074521159
+      },
+      "sabre_def": {
+        "n_2q": 20,
+        "n_1q": 69,
+        "depth": 50,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 17,
+        "n_1q": 51,
+        "depth": 43,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 18,
+        "n_1q": 67,
+        "depth": 42,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "sabre_buf": {
+        "n_2q": 20,
+        "n_1q": 60,
+        "depth": 46,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "tket_buf": {
+        "n_2q": 21,
+        "n_1q": 67,
+        "depth": 51,
+        "region_id": "Buffered_Sub5_2"
+      }
+    },
+    "W26_qaoa_sparse_5q_v1": {
+      "id": "W26_qaoa_sparse_5q_v1",
+      "family": "F3_qaoa_sparse",
+      "n_qubits": 5,
+      "depth_tier": 1,
+      "group_id": "G08",
+      "pos_in_group": 2,
+      "observable_meta": {
+        "type": "maxcut_qaoa",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        "weights": {
+          "0_1": 0.6767,
+          "1_2": 1.3682,
+          "2_3": 0.9154,
+          "3_4": 1.1719,
+          "4_0": 1.2578
+        },
+        "p_layers": 1
+      },
+      "ideal_probs": {
+        "00000": 0.058307934366283024,
+        "10000": 0.05463565467150687,
+        "01000": 0.03951684795890346,
+        "11000": 0.03693817680383634,
+        "00100": 0.021200369496352917,
+        "10100": 0.02728159653410132,
+        "01100": 0.00319567307608718,
+        "11100": 0.009481482450466207,
+        "00010": 0.0636468302944324,
+        "10010": 0.0569865859992339,
+        "01010": 0.03636604030280122,
+        "11010": 0.030708868687235786,
+        "00110": 0.027575318243667483,
+        "10110": 0.030422237550046388,
+        "01110": 0.00038628597250486954,
+        "11110": 0.003350097592539893,
+        "00001": 0.003350097592539893,
+        "10001": 0.00038628597250486954,
+        "01001": 0.030422237550046388,
+        "11001": 0.027575318243667483,
+        "00101": 0.030708868687235786,
+        "10101": 0.03636604030280122,
+        "01101": 0.0569865859992339,
+        "11101": 0.0636468302944324,
+        "00011": 0.009481482450466207,
+        "10011": 0.00319567307608718,
+        "01011": 0.02728159653410132,
+        "11011": 0.021200369496352917,
+        "00111": 0.03693817680383634,
+        "10111": 0.03951684795890346,
+        "01111": 0.05463565467150687,
+        "11111": 0.058307934366283024
+      },
+      "sabre_def": {
+        "n_2q": 11,
+        "n_1q": 44,
+        "depth": 34,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 13,
+        "n_1q": 47,
+        "depth": 41,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 11,
+        "n_1q": 44,
+        "depth": 34,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "sabre_buf": {
+        "n_2q": 11,
+        "n_1q": 44,
+        "depth": 34,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "tket_buf": {
+        "n_2q": 13,
+        "n_1q": 45,
+        "depth": 32,
+        "region_id": "Buffered_Sub5_3"
+      }
+    },
+    "W36_chem_ansatz_5q_v1": {
+      "id": "W36_chem_ansatz_5q_v1",
+      "family": "F4_chem_ansatz",
+      "n_qubits": 5,
+      "depth_tier": 1,
+      "group_id": "G08",
+      "pos_in_group": 3,
+      "observable_meta": {
+        "type": "circuit_benchmark_ansatz",
+        "layers": 1
+      },
+      "ideal_probs": {
+        "00000": 0.015716664598960026,
+        "10000": 0.010823896576299398,
+        "01000": 0.0720841521826022,
+        "11000": 0.10411606135035259,
+        "00100": 0.037917547345687475,
+        "10100": 0.026113403916745416,
+        "01100": 0.012335799766647825,
+        "11100": 0.01781743762563048,
+        "00010": 0.004295908587892892,
+        "10010": 0.0029585456865743502,
+        "01010": 0.01970309453780095,
+        "11010": 0.028458524343782116,
+        "00110": 0.006126405757739428,
+        "10110": 0.00421918924900926,
+        "01110": 0.001993117171522626,
+        "11110": 0.0028787951779333776,
+        "00001": 0.03233314371540696,
+        "10001": 0.02226748565884311,
+        "01001": 0.14829528475638298,
+        "11001": 0.21419300218099888,
+        "00101": 0.07800595984882089,
+        "10101": 0.053721859140168256,
+        "01101": 0.025377851909233955,
+        "11101": 0.03665496376552629,
+        "00011": 0.0013132117908754273,
+        "10011": 0.0009043947281379965,
+        "01011": 0.006023018305532566,
+        "11011": 0.008699456460618206,
+        "00111": 0.0018727745509819309,
+        "10111": 0.001289759536631917,
+        "01111": 0.0006092738978702528,
+        "11111": 0.0008800158787903176
+      },
+      "sabre_def": {
+        "n_2q": 8,
+        "n_1q": 34,
+        "depth": 26,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 8,
+        "n_1q": 26,
+        "depth": 26,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 8,
+        "n_1q": 34,
+        "depth": 26,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "sabre_buf": {
+        "n_2q": 8,
+        "n_1q": 34,
+        "depth": 26,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "tket_buf": {
+        "n_2q": 8,
+        "n_1q": 26,
+        "depth": 26,
+        "region_id": "Buffered_Sub5_4"
+      }
+    },
+    "W46_dense_ent_5q_v1": {
+      "id": "W46_dense_ent_5q_v1",
+      "family": "F5_dense_entangler",
+      "n_qubits": 5,
+      "depth_tier": 1,
+      "group_id": "G09",
+      "pos_in_group": 0,
+      "observable_meta": {
+        "type": "distribution_overlap",
+        "rounds": 1
+      },
+      "ideal_probs": {
+        "00000": 0.004943909859757995,
+        "10000": 0.05497681247253692,
+        "01000": 0.003790802139675893,
+        "11000": 0.01771234472283651,
+        "00100": 0.06000903749508194,
+        "10100": 0.04642102655560693,
+        "01100": 0.007259377658873277,
+        "11100": 0.070504148105795,
+        "00010": 0.044018156901406015,
+        "10010": 0.02221739905507325,
+        "01010": 0.002433152568747924,
+        "11010": 0.009694483469357296,
+        "00110": 0.11036922264249567,
+        "10110": 0.013595255128661474,
+        "01110": 0.0072332035532774105,
+        "11110": 0.03141488232065003,
+        "00001": 0.06423634541922066,
+        "10001": 0.005296058669762325,
+        "01001": 6.401636837580822e-05,
+        "11001": 0.027865229319575816,
+        "00101": 0.1328544406305765,
+        "10101": 0.01382682398801598,
+        "01101": 0.010160504517622581,
+        "11101": 0.017065450671227576,
+        "00011": 0.004802867054991568,
+        "10011": 0.0635360247863553,
+        "01011": 0.0035586410828976306,
+        "11011": 0.006790222755385057,
+        "00111": 0.00391285278553492,
+        "10111": 0.0735645849898742,
+        "01111": 0.001150372585574765,
+        "11111": 0.06472234972517614
+      },
+      "sabre_def": {
+        "n_2q": 15,
+        "n_1q": 53,
+        "depth": 38,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 20,
+        "n_1q": 72,
+        "depth": 62,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 15,
+        "n_1q": 53,
+        "depth": 38,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "sabre_buf": {
+        "n_2q": 17,
+        "n_1q": 56,
+        "depth": 43,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "tket_buf": {
+        "n_2q": 20,
+        "n_1q": 76,
+        "depth": 53,
+        "region_id": "Buffered_Sub5_1"
+      }
+    },
+    "W56_trotter_5q_v1": {
+      "id": "W56_trotter_5q_v1",
+      "family": "F6_trotter",
+      "n_qubits": 5,
+      "depth_tier": 1,
+      "group_id": "G09",
+      "pos_in_group": 1,
+      "observable_meta": {
+        "type": "spin_chain_trotter",
+        "steps": 1,
+        "jx": 0.4463,
+        "jz": 0.4029,
+        "hx": 0.4944
+      },
+      "ideal_probs": {
+        "00000": 0.014166288025965734,
+        "10000": 0.02941767243904366,
+        "01000": 0.030439168887272116,
+        "11000": 0.013069824465010703,
+        "00100": 0.008345110673388872,
+        "10100": 0.07414163900883444,
+        "01100": 0.011959107306461521,
+        "11100": 0.0036307054895994375,
+        "00010": 0.017436871012355797,
+        "10010": 0.06078749759304705,
+        "01010": 0.036516425270996994,
+        "11010": 0.00613113900580086,
+        "00110": 0.008810351272420122,
+        "10110": 0.03911704363032026,
+        "01110": 0.009094165138813648,
+        "11110": 0.004568316779297644,
+        "00001": 0.019454748654412952,
+        "10001": 0.003137243624928192,
+        "01001": 0.029028216155886893,
+        "11001": 0.04388752702668907,
+        "00101": 0.022303326309161882,
+        "10101": 0.25534294571164473,
+        "01101": 0.0617987625729371,
+        "11101": 0.015033285522299216,
+        "00011": 0.0040989904672661046,
+        "10011": 0.04866750665725166,
+        "01011": 0.020212509710685816,
+        "11011": 0.017862829239138067,
+        "00111": 0.0004579589368678073,
+        "10111": 0.06260874026470346,
+        "01111": 0.004940439661859571,
+        "11111": 0.023533643485637815
+      },
+      "sabre_def": {
+        "n_2q": 8,
+        "n_1q": 41,
+        "depth": 26,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 8,
+        "n_1q": 34,
+        "depth": 26,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 8,
+        "n_1q": 41,
+        "depth": 26,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "sabre_buf": {
+        "n_2q": 8,
+        "n_1q": 41,
+        "depth": 26,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "tket_buf": {
+        "n_2q": 8,
+        "n_1q": 34,
+        "depth": 26,
+        "region_id": "Buffered_Sub5_2"
+      }
+    },
+    "W07_qft_5q_v2": {
+      "id": "W07_qft_5q_v2",
+      "family": "F1_qft",
+      "n_qubits": 5,
+      "depth_tier": 2,
+      "group_id": "G09",
+      "pos_in_group": 2,
+      "observable_meta": {
+        "type": "distribution_overlap"
+      },
+      "ideal_probs": {
+        "00000": 0.19795740125865424,
+        "10000": 0.09008295378561235,
+        "01000": 0.0038027951176842103,
+        "11000": 0.07750225963833748,
+        "00100": 0.004043115110295928,
+        "10100": 0.008918528344654468,
+        "01100": 0.0042013231169582286,
+        "11100": 0.08498070323691084,
+        "00010": 0.003511974248789095,
+        "10010": 0.003518175961019289,
+        "01010": 8.81021570717573e-05,
+        "11010": 0.009077573352328745,
+        "00110": 0.0005265211542911868,
+        "10110": 0.002916333653974963,
+        "01110": 0.013281974049063904,
+        "11110": 0.07321436036233779,
+        "00001": 0.01639340613179925,
+        "10001": 0.011147552382731261,
+        "01001": 0.0003256190344274103,
+        "11001": 0.016858533685775515,
+        "00101": 0.0005872719332504679,
+        "10101": 0.001997683896007558,
+        "01101": 0.004722133033101652,
+        "11101": 0.04632658335918831,
+        "00011": 0.0018537779680598008,
+        "10011": 0.0027359460740584525,
+        "01011": 0.00024669333941338095,
+        "11011": 0.012655071687679362,
+        "00111": 0.0027825038351548545,
+        "10111": 0.027458033147226474,
+        "01111": 0.06297141598737253,
+        "11111": 0.2133136799567685
+      },
+      "sabre_def": {
+        "n_2q": 29,
+        "n_1q": 96,
+        "depth": 83,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 29,
+        "n_1q": 90,
+        "depth": 89,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 26,
+        "n_1q": 98,
+        "depth": 56,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "sabre_buf": {
+        "n_2q": 32,
+        "n_1q": 106,
+        "depth": 77,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "tket_buf": {
+        "n_2q": 32,
+        "n_1q": 104,
+        "depth": 87,
+        "region_id": "Buffered_Sub5_3"
+      }
+    },
+    "W17_qaoa_dense_5q_v2": {
+      "id": "W17_qaoa_dense_5q_v2",
+      "family": "F2_qaoa_dense",
+      "n_qubits": 5,
+      "depth_tier": 2,
+      "group_id": "G09",
+      "pos_in_group": 3,
+      "observable_meta": {
+        "type": "maxcut_qaoa",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "weights": {
+          "0_1": 1.372,
+          "0_2": 1.0591,
+          "0_3": 0.8027,
+          "0_4": 0.8582,
+          "1_2": 0.7952,
+          "1_3": 1.4598,
+          "1_4": 0.5752,
+          "2_3": 0.9095
+        },
+        "p_layers": 1
+      },
+      "ideal_probs": {
+        "00000": 0.021405981991532503,
+        "10000": 0.055505494402277755,
+        "01000": 0.025847755571316175,
+        "11000": 0.03665814782357483,
+        "00100": 0.03506543163805095,
+        "10100": 0.0454348563684005,
+        "01100": 0.02762906951392407,
+        "11100": 0.03140444665639729,
+        "00010": 0.026909704004172523,
+        "10010": 0.011679287245920832,
+        "01010": 0.03370674884593063,
+        "11010": 0.019865998127686114,
+        "00110": 0.04627021346808789,
+        "10110": 0.02956687707191796,
+        "01110": 0.0316043589484838,
+        "11110": 0.0214456283223257,
+        "00001": 0.0214456283223257,
+        "10001": 0.0316043589484838,
+        "01001": 0.02956687707191796,
+        "11001": 0.04627021346808789,
+        "00101": 0.019865998127686114,
+        "10101": 0.03370674884593063,
+        "01101": 0.011679287245920832,
+        "11101": 0.026909704004172523,
+        "00011": 0.03140444665639729,
+        "10011": 0.02762906951392407,
+        "01011": 0.0454348563684005,
+        "11011": 0.03506543163805095,
+        "00111": 0.03665814782357483,
+        "10111": 0.025847755571316175,
+        "01111": 0.055505494402277755,
+        "11111": 0.021405981991532503
+      },
+      "sabre_def": {
+        "n_2q": 22,
+        "n_1q": 67,
+        "depth": 58,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 25,
+        "n_1q": 79,
+        "depth": 50,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 20,
+        "n_1q": 69,
+        "depth": 44,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "sabre_buf": {
+        "n_2q": 22,
+        "n_1q": 77,
+        "depth": 51,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "tket_buf": {
+        "n_2q": 25,
+        "n_1q": 75,
+        "depth": 42,
+        "region_id": "Buffered_Sub5_4"
+      }
+    },
+    "W27_qaoa_sparse_5q_v2": {
+      "id": "W27_qaoa_sparse_5q_v2",
+      "family": "F3_qaoa_sparse",
+      "n_qubits": 5,
+      "depth_tier": 2,
+      "group_id": "G10",
+      "pos_in_group": 0,
+      "observable_meta": {
+        "type": "maxcut_qaoa",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "weights": {
+          "0_1": 0.6271,
+          "1_2": 0.8382,
+          "2_3": 1.1311,
+          "3_4": 0.8749,
+          "4_0": 0.6801,
+          "0_2": 0.937
+        },
+        "p_layers": 1
+      },
+      "ideal_probs": {
+        "00000": 0.05661656096811959,
+        "10000": 0.0149278511710454,
+        "01000": 0.010563322990735851,
+        "11000": 0.048291371487752144,
+        "00100": 0.05688150929974503,
+        "10100": 0.018026535403515027,
+        "01100": 0.01144313101024585,
+        "11100": 0.03854752139381405,
+        "00010": 0.030319110364783308,
+        "10010": 0.014331865839480007,
+        "01010": 0.023186346551159358,
+        "11010": 0.05308522179553266,
+        "00110": 0.04915870429199243,
+        "10110": 0.01966616949230166,
+        "01110": 0.01605921599672829,
+        "11110": 0.03889556194304921,
+        "00001": 0.03889556194304921,
+        "10001": 0.01605921599672829,
+        "01001": 0.01966616949230166,
+        "11001": 0.04915870429199243,
+        "00101": 0.05308522179553266,
+        "10101": 0.023186346551159358,
+        "01101": 0.014331865839480007,
+        "11101": 0.030319110364783308,
+        "00011": 0.03854752139381405,
+        "10011": 0.01144313101024585,
+        "01011": 0.018026535403515027,
+        "11011": 0.05688150929974503,
+        "00111": 0.048291371487752144,
+        "10111": 0.010563322990735851,
+        "01111": 0.0149278511710454,
+        "11111": 0.05661656096811959
+      },
+      "sabre_def": {
+        "n_2q": 15,
+        "n_1q": 56,
+        "depth": 44,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 15,
+        "n_1q": 54,
+        "depth": 47,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 13,
+        "n_1q": 54,
+        "depth": 39,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "sabre_buf": {
+        "n_2q": 13,
+        "n_1q": 54,
+        "depth": 39,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "tket_buf": {
+        "n_2q": 18,
+        "n_1q": 63,
+        "depth": 47,
+        "region_id": "Buffered_Sub5_1"
+      }
+    },
+    "W37_chem_ansatz_5q_v2": {
+      "id": "W37_chem_ansatz_5q_v2",
+      "family": "F4_chem_ansatz",
+      "n_qubits": 5,
+      "depth_tier": 2,
+      "group_id": "G10",
+      "pos_in_group": 1,
+      "observable_meta": {
+        "type": "circuit_benchmark_ansatz",
+        "layers": 2
+      },
+      "ideal_probs": {
+        "00000": 0.022649841687361234,
+        "10000": 0.05151689484702356,
+        "01000": 0.06813317701811103,
+        "11000": 0.05482439341892395,
+        "00100": 0.030654458921977632,
+        "10100": 0.016768148047985324,
+        "01100": 0.030659232025422735,
+        "11100": 0.010822761667594426,
+        "00010": 0.007009106694730132,
+        "10010": 0.009010394019674755,
+        "01010": 0.01522915773944729,
+        "11010": 0.009988959263744181,
+        "00110": 0.011390911655405083,
+        "10110": 0.00842182629398364,
+        "01110": 0.012531619754336903,
+        "11110": 0.005132250339892153,
+        "00001": 0.04736706464999781,
+        "10001": 0.10049139514247911,
+        "01001": 0.12427963151983576,
+        "11001": 0.0960080363569348,
+        "00101": 0.049522096899883704,
+        "10101": 0.03213885266671493,
+        "01101": 0.04437830693197632,
+        "11101": 0.013017998781661981,
+        "00011": 0.0053929301529966655,
+        "10011": 0.011141607111339576,
+        "01011": 0.023067901072183754,
+        "11011": 0.01929458813696475,
+        "00111": 0.021325413969381646,
+        "10111": 0.010450986746120682,
+        "01111": 0.02585143998095112,
+        "11111": 0.011528616484963342
+      },
+      "sabre_def": {
+        "n_2q": 16,
+        "n_1q": 58,
+        "depth": 38,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 16,
+        "n_1q": 50,
+        "depth": 38,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 16,
+        "n_1q": 58,
+        "depth": 38,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "sabre_buf": {
+        "n_2q": 16,
+        "n_1q": 58,
+        "depth": 38,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "tket_buf": {
+        "n_2q": 16,
+        "n_1q": 50,
+        "depth": 38,
+        "region_id": "Buffered_Sub5_2"
+      }
+    },
+    "W47_dense_ent_5q_v2": {
+      "id": "W47_dense_ent_5q_v2",
+      "family": "F5_dense_entangler",
+      "n_qubits": 5,
+      "depth_tier": 2,
+      "group_id": "G10",
+      "pos_in_group": 2,
+      "observable_meta": {
+        "type": "distribution_overlap",
+        "rounds": 1
+      },
+      "ideal_probs": {
+        "00000": 0.07017503222207122,
+        "10000": 0.02069410179753426,
+        "01000": 0.004424363685008912,
+        "11000": 0.03582003289778471,
+        "00100": 0.007343375732686905,
+        "10100": 0.0003124333567957823,
+        "01100": 0.00682942957569076,
+        "11100": 0.022273863404835333,
+        "00010": 0.06060789413701046,
+        "10010": 0.021215617272841856,
+        "01010": 0.009719352974317518,
+        "11010": 0.009793002461731147,
+        "00110": 0.06924800540565922,
+        "10110": 0.025451353082740755,
+        "01110": 0.01858272722978342,
+        "11110": 0.048546657994717454,
+        "00001": 0.0025038530731176303,
+        "10001": 0.01940216540696256,
+        "01001": 0.021684838497663148,
+        "11001": 0.05883139421995745,
+        "00101": 0.014932542924546334,
+        "10101": 0.010725277616131177,
+        "01101": 0.011277715314123955,
+        "11101": 0.006865382427034094,
+        "00011": 0.019427554241881192,
+        "10011": 0.05373503976563954,
+        "01011": 0.03661890647405861,
+        "11011": 0.02222534684262522,
+        "00111": 0.008909205793107658,
+        "10111": 0.019879846356287992,
+        "01111": 0.09226978760532548,
+        "11111": 0.1696739002103284
+      },
+      "sabre_def": {
+        "n_2q": 15,
+        "n_1q": 57,
+        "depth": 37,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 20,
+        "n_1q": 72,
+        "depth": 62,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 15,
+        "n_1q": 57,
+        "depth": 37,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "sabre_buf": {
+        "n_2q": 15,
+        "n_1q": 57,
+        "depth": 37,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "tket_buf": {
+        "n_2q": 20,
+        "n_1q": 74,
+        "depth": 53,
+        "region_id": "Buffered_Sub5_3"
+      }
+    },
+    "W57_trotter_5q_v2": {
+      "id": "W57_trotter_5q_v2",
+      "family": "F6_trotter",
+      "n_qubits": 5,
+      "depth_tier": 2,
+      "group_id": "G10",
+      "pos_in_group": 3,
+      "observable_meta": {
+        "type": "spin_chain_trotter",
+        "steps": 1,
+        "jx": 0.3597,
+        "jz": 0.4779,
+        "hx": 0.2416
+      },
+      "ideal_probs": {
+        "00000": 0.00038903955599338175,
+        "10000": 0.0006370027546158492,
+        "01000": 0.006414199603630169,
+        "11000": 0.005921357188436027,
+        "00100": 0.0003012451592353757,
+        "10100": 0.012374734126223827,
+        "01100": 0.0066327380798376565,
+        "11100": 0.0030218734816050167,
+        "00010": 0.0033665749645966363,
+        "10010": 0.008770470959165146,
+        "01010": 0.05688192265735967,
+        "11010": 0.033274822241265135,
+        "00110": 0.0016870925843447421,
+        "10110": 0.0700659498091136,
+        "01110": 0.036871040101353066,
+        "11110": 0.016277158169172353,
+        "00001": 0.001913222948811766,
+        "10001": 0.03343775503481682,
+        "01001": 0.026408511507856884,
+        "11001": 0.056728577309392826,
+        "00101": 0.004272246362375712,
+        "10101": 0.15410164679445623,
+        "01101": 0.0932159586436142,
+        "11101": 0.03484897022256925,
+        "00011": 0.004747012499569316,
+        "10011": 0.08202497653694911,
+        "01011": 0.1019418343976947,
+        "11011": 0.045877024553511274,
+        "00111": 0.0011650269612718221,
+        "10111": 0.047262223700613976,
+        "01111": 0.02747512254222556,
+        "11111": 0.021692668548322403
+      },
+      "sabre_def": {
+        "n_2q": 12,
+        "n_1q": 54,
+        "depth": 36,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 12,
+        "n_1q": 55,
+        "depth": 38,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 12,
+        "n_1q": 54,
+        "depth": 36,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "sabre_buf": {
+        "n_2q": 12,
+        "n_1q": 54,
+        "depth": 36,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "tket_buf": {
+        "n_2q": 12,
+        "n_1q": 55,
+        "depth": 38,
+        "region_id": "Buffered_Sub5_4"
+      }
+    },
+    "W08_qft_5q_v3": {
+      "id": "W08_qft_5q_v3",
+      "family": "F1_qft",
+      "n_qubits": 5,
+      "depth_tier": 3,
+      "group_id": "G11",
+      "pos_in_group": 0,
+      "observable_meta": {
+        "type": "distribution_overlap"
+      },
+      "ideal_probs": {
+        "00000": 0.07432840677529587,
+        "10000": 0.025732768255957907,
+        "01000": 0.011126977600501242,
+        "11000": 0.004103946985886296,
+        "00100": 0.010890361153131,
+        "10100": 0.017724948480056332,
+        "01100": 0.0004878269613147097,
+        "11100": 0.09887265827410965,
+        "00010": 0.003029462230698773,
+        "10010": 0.02396365339793224,
+        "01010": 0.005868263255418152,
+        "11010": 0.10869864399275649,
+        "00110": 0.012612791899341207,
+        "10110": 0.016392137791486176,
+        "01110": 0.009370266545142917,
+        "11110": 0.032918056388373605,
+        "00001": 0.05144085792510148,
+        "10001": 0.052128619211792196,
+        "01001": 0.014522342274761228,
+        "11001": 0.05932523279655545,
+        "00101": 0.028631385701366113,
+        "10101": 0.002987966397640916,
+        "01101": 0.005764777073914263,
+        "11101": 0.1553455659688875,
+        "00011": 0.010462193120458563,
+        "10011": 0.010917112229578932,
+        "01011": 0.001814701440898538,
+        "11011": 0.0005486300512737329,
+        "00111": 0.02125598445370642,
+        "10111": 0.007767496535058422,
+        "01111": 0.02285117158924444,
+        "11111": 0.09811479324235861
+      },
+      "sabre_def": {
+        "n_2q": 33,
+        "n_1q": 110,
+        "depth": 86,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 29,
+        "n_1q": 104,
+        "depth": 77,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 30,
+        "n_1q": 111,
+        "depth": 63,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "sabre_buf": {
+        "n_2q": 36,
+        "n_1q": 120,
+        "depth": 80,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "tket_buf": {
+        "n_2q": 38,
+        "n_1q": 132,
+        "depth": 101,
+        "region_id": "Buffered_Sub5_1"
+      }
+    },
+    "W18_qaoa_dense_5q_v3": {
+      "id": "W18_qaoa_dense_5q_v3",
+      "family": "F2_qaoa_dense",
+      "n_qubits": 5,
+      "depth_tier": 3,
+      "group_id": "G11",
+      "pos_in_group": 1,
+      "observable_meta": {
+        "type": "maxcut_qaoa",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        "weights": {
+          "0_1": 1.2599,
+          "0_2": 0.9823,
+          "0_3": 0.7168,
+          "0_4": 1.1604,
+          "1_2": 0.7919,
+          "1_3": 1.1084,
+          "1_4": 1.2183
+        },
+        "p_layers": 2
+      },
+      "ideal_probs": {
+        "00000": 0.11373325345781474,
+        "10000": 0.057313477022631065,
+        "01000": 0.04600776206682836,
+        "11000": 0.1333340561388706,
+        "00100": 0.01511083618782565,
+        "10100": 0.0008946835295783966,
+        "01100": 0.007141930608093362,
+        "11100": 0.0012781845882764726,
+        "00010": 0.017788817521207787,
+        "10010": 0.009876281828776796,
+        "01010": 0.00022098089065507897,
+        "11010": 0.001824294356195299,
+        "00110": 0.008857118203692125,
+        "10110": 0.012150145331932134,
+        "01110": 0.007969818659669827,
+        "11110": 0.06649835960795236,
+        "00001": 0.06649835960795236,
+        "10001": 0.007969818659669827,
+        "01001": 0.012150145331932134,
+        "11001": 0.008857118203692125,
+        "00101": 0.001824294356195299,
+        "10101": 0.00022098089065507897,
+        "01101": 0.009876281828776796,
+        "11101": 0.017788817521207787,
+        "00011": 0.0012781845882764726,
+        "10011": 0.007141930608093362,
+        "01011": 0.0008946835295783966,
+        "11011": 0.01511083618782565,
+        "00111": 0.1333340561388706,
+        "10111": 0.04600776206682836,
+        "01111": 0.057313477022631065,
+        "11111": 0.11373325345781474
+      },
+      "sabre_def": {
+        "n_2q": 35,
+        "n_1q": 113,
+        "depth": 94,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 35,
+        "n_1q": 99,
+        "depth": 89,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 38,
+        "n_1q": 125,
+        "depth": 90,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "sabre_buf": {
+        "n_2q": 40,
+        "n_1q": 121,
+        "depth": 91,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "tket_buf": {
+        "n_2q": 41,
+        "n_1q": 120,
+        "depth": 99,
+        "region_id": "Buffered_Sub5_2"
+      }
+    },
+    "W28_qaoa_sparse_5q_v3": {
+      "id": "W28_qaoa_sparse_5q_v3",
+      "family": "F3_qaoa_sparse",
+      "n_qubits": 5,
+      "depth_tier": 3,
+      "group_id": "G11",
+      "pos_in_group": 2,
+      "observable_meta": {
+        "type": "maxcut_qaoa",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        "weights": {
+          "0_1": 0.9569,
+          "1_2": 1.3592,
+          "2_3": 1.3426,
+          "3_4": 1.1261,
+          "4_0": 0.8979
+        },
+        "p_layers": 2
+      },
+      "ideal_probs": {
+        "00000": 0.32431988900527753,
+        "10000": 0.016491259694899927,
+        "01000": 0.011276821704217708,
+        "11000": 0.020209473469303654,
+        "00100": 0.03225403601435999,
+        "10100": 0.0015882808099695544,
+        "01100": 0.004771606768720226,
+        "11100": 0.0062833630737261495,
+        "00010": 0.022509125562389994,
+        "10010": 0.002372495770888053,
+        "01010": 0.004448283294100575,
+        "11010": 0.0011950845470035344,
+        "00110": 0.013950596970803919,
+        "10110": 0.004363959400186737,
+        "01110": 0.026863359603120314,
+        "11110": 0.007102364311031121,
+        "00001": 0.007102364311031121,
+        "10001": 0.026863359603120314,
+        "01001": 0.004363959400186737,
+        "11001": 0.013950596970803919,
+        "00101": 0.0011950845470035344,
+        "10101": 0.004448283294100575,
+        "01101": 0.002372495770888053,
+        "11101": 0.022509125562389994,
+        "00011": 0.0062833630737261495,
+        "10011": 0.004771606768720226,
+        "01011": 0.0015882808099695544,
+        "11011": 0.03225403601435999,
+        "00111": 0.020209473469303654,
+        "10111": 0.011276821704217708,
+        "01111": 0.016491259694899927,
+        "11111": 0.32431988900527753
+      },
+      "sabre_def": {
+        "n_2q": 26,
+        "n_1q": 85,
+        "depth": 73,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 26,
+        "n_1q": 90,
+        "depth": 80,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 25,
+        "n_1q": 92,
+        "depth": 67,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "sabre_buf": {
+        "n_2q": 27,
+        "n_1q": 92,
+        "depth": 64,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "tket_buf": {
+        "n_2q": 29,
+        "n_1q": 97,
+        "depth": 71,
+        "region_id": "Buffered_Sub5_3"
+      }
+    },
+    "W38_chem_ansatz_5q_v3": {
+      "id": "W38_chem_ansatz_5q_v3",
+      "family": "F4_chem_ansatz",
+      "n_qubits": 5,
+      "depth_tier": 3,
+      "group_id": "G11",
+      "pos_in_group": 3,
+      "observable_meta": {
+        "type": "circuit_benchmark_ansatz",
+        "layers": 2
+      },
+      "ideal_probs": {
+        "00000": 0.022883719929999113,
+        "10000": 0.044657383507682585,
+        "01000": 0.05765957451443836,
+        "11000": 0.02785115485488755,
+        "00100": 0.02541384631682839,
+        "10100": 0.02738325087059799,
+        "01100": 0.005630410257507303,
+        "11100": 0.0036921778712842445,
+        "00010": 0.00680582629480199,
+        "10010": 0.011142039120173338,
+        "01010": 0.013993165938169658,
+        "11010": 0.006533512162794085,
+        "00110": 0.019532591991759767,
+        "10110": 0.026780373159308396,
+        "01110": 0.003933905452591081,
+        "11110": 0.0022424808460496325,
+        "00001": 0.04805407340144463,
+        "10001": 0.08369628865389311,
+        "01001": 0.09983563125572617,
+        "11001": 0.04604604634407298,
+        "00101": 0.022978046697061993,
+        "10101": 0.02180237664581351,
+        "01101": 0.0055574230793993444,
+        "11101": 0.0037882197892412134,
+        "00011": 0.01973075323264359,
+        "10011": 0.047063091962930265,
+        "01011": 0.06233482327235379,
+        "11011": 0.031684805207288495,
+        "00111": 0.07612653859596948,
+        "10111": 0.09898982641696583,
+        "01111": 0.01730988776424892,
+        "11111": 0.008866754592073268
+      },
+      "sabre_def": {
+        "n_2q": 16,
+        "n_1q": 56,
+        "depth": 38,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 16,
+        "n_1q": 50,
+        "depth": 38,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 16,
+        "n_1q": 56,
+        "depth": 38,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "sabre_buf": {
+        "n_2q": 16,
+        "n_1q": 56,
+        "depth": 38,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "tket_buf": {
+        "n_2q": 16,
+        "n_1q": 50,
+        "depth": 38,
+        "region_id": "Buffered_Sub5_4"
+      }
+    },
+    "W48_dense_ent_5q_v3": {
+      "id": "W48_dense_ent_5q_v3",
+      "family": "F5_dense_entangler",
+      "n_qubits": 5,
+      "depth_tier": 3,
+      "group_id": "G12",
+      "pos_in_group": 0,
+      "observable_meta": {
+        "type": "distribution_overlap",
+        "rounds": 2
+      },
+      "ideal_probs": {
+        "00000": 0.0036684086418600193,
+        "10000": 0.005256251118984835,
+        "01000": 0.022071082337481396,
+        "11000": 0.0753113284489327,
+        "00100": 0.04202624758939815,
+        "10100": 0.02344576596503205,
+        "01100": 0.04967537958892264,
+        "11100": 0.03532411491432885,
+        "00010": 0.05958750234927654,
+        "10010": 0.008814245253177928,
+        "01010": 0.00010673367945731495,
+        "11010": 0.020555644201130818,
+        "00110": 0.07794996522263675,
+        "10110": 0.03428500761458919,
+        "01110": 0.01748967940042813,
+        "11110": 0.015955485023536387,
+        "00001": 0.06566656613957836,
+        "10001": 0.08923679941447704,
+        "01001": 0.02627836852572802,
+        "11001": 0.02250624644764927,
+        "00101": 0.03276851535961812,
+        "10101": 0.04068299269887185,
+        "01101": 0.024005525926041143,
+        "11101": 0.05775860047841566,
+        "00011": 0.03387766529177382,
+        "10011": 0.018297898222305032,
+        "01011": 0.014508222728562096,
+        "11011": 0.0012279414464960658,
+        "00111": 0.005939764159243116,
+        "10111": 0.0010461632730174462,
+        "01111": 0.07103620708565081,
+        "11111": 0.0036396814533989643
+      },
+      "sabre_def": {
+        "n_2q": 35,
+        "n_1q": 117,
+        "depth": 81,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 43,
+        "n_1q": 155,
+        "depth": 125,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 33,
+        "n_1q": 116,
+        "depth": 76,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "sabre_buf": {
+        "n_2q": 35,
+        "n_1q": 117,
+        "depth": 81,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "tket_buf": {
+        "n_2q": 40,
+        "n_1q": 144,
+        "depth": 104,
+        "region_id": "Buffered_Sub5_1"
+      }
+    },
+    "W58_trotter_5q_v3": {
+      "id": "W58_trotter_5q_v3",
+      "family": "F6_trotter",
+      "n_qubits": 5,
+      "depth_tier": 3,
+      "group_id": "G12",
+      "pos_in_group": 1,
+      "observable_meta": {
+        "type": "spin_chain_trotter",
+        "steps": 2,
+        "jx": 0.3568,
+        "jz": 0.5657,
+        "hx": 0.2716
+      },
+      "ideal_probs": {
+        "00000": 0.004628261236763304,
+        "10000": 0.00665061690301367,
+        "01000": 0.04409146489745034,
+        "11000": 0.0013942379374919556,
+        "00100": 0.003179308206215305,
+        "10100": 0.0039561650838048626,
+        "01100": 0.003981977917685384,
+        "11100": 0.0027702975270029796,
+        "00010": 0.0030178728088394186,
+        "10010": 0.012011408904302865,
+        "01010": 0.03632404588831253,
+        "11010": 0.0038809938850668277,
+        "00110": 0.0007854733378167586,
+        "10110": 0.07153127446254715,
+        "01110": 0.017604482312467307,
+        "11110": 0.0017618781127667744,
+        "00001": 0.002660964041315012,
+        "10001": 0.027294266439436672,
+        "01001": 0.00638802772360165,
+        "11001": 0.031479255189506304,
+        "00101": 0.003756362784758951,
+        "10101": 0.5042481074107137,
+        "01101": 0.09630657961143263,
+        "11101": 0.0033656930089756973,
+        "00011": 0.002373156026737924,
+        "10011": 0.0067601871472189505,
+        "01011": 0.015620874309314364,
+        "11011": 0.02606469368356017,
+        "00111": 0.004902461138345559,
+        "10111": 0.039577593397629694,
+        "01111": 0.0031193548756517408,
+        "11111": 0.008512663790253333
+      },
+      "sabre_def": {
+        "n_2q": 16,
+        "n_1q": 73,
+        "depth": 38,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 16,
+        "n_1q": 61,
+        "depth": 38,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 16,
+        "n_1q": 73,
+        "depth": 38,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "sabre_buf": {
+        "n_2q": 16,
+        "n_1q": 73,
+        "depth": 38,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "tket_buf": {
+        "n_2q": 16,
+        "n_1q": 61,
+        "depth": 38,
+        "region_id": "Buffered_Sub5_2"
+      }
+    },
+    "W09_qft_5q_v4": {
+      "id": "W09_qft_5q_v4",
+      "family": "F1_qft",
+      "n_qubits": 5,
+      "depth_tier": 4,
+      "group_id": "G12",
+      "pos_in_group": 2,
+      "observable_meta": {
+        "type": "distribution_overlap"
+      },
+      "ideal_probs": {
+        "00000": 0.0320282749340083,
+        "10000": 0.014693764622170723,
+        "01000": 0.01587815194863121,
+        "11000": 0.002098040073178511,
+        "00100": 0.03306515890970588,
+        "10100": 0.04644915523217848,
+        "01100": 0.001997989808660944,
+        "11100": 0.15882498657555644,
+        "00010": 0.003399251677106216,
+        "10010": 0.003421902738706006,
+        "01010": 2.7137711552288863e-06,
+        "11010": 0.01815343363873671,
+        "00110": 0.04263764251923016,
+        "10110": 0.011349424553556071,
+        "01110": 0.025075754173681037,
+        "11110": 0.1178913652611897,
+        "00001": 0.015397321393512192,
+        "10001": 0.004938616952738006,
+        "01001": 0.007472066089204709,
+        "11001": 0.00553351277265983,
+        "00101": 0.03282936326205747,
+        "10101": 0.027951592303888953,
+        "01101": 0.005593116240417546,
+        "11101": 0.1329764575945495,
+        "00011": 0.0140281384307094,
+        "10011": 0.054147179747807736,
+        "01011": 0.01321407846707524,
+        "11011": 0.05419216930731108,
+        "00111": 0.031147218523568675,
+        "10111": 0.0017703775096530971,
+        "01111": 0.014848929526056617,
+        "11111": 0.056992851441337734
+      },
+      "sabre_def": {
+        "n_2q": 33,
+        "n_1q": 112,
+        "depth": 87,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 29,
+        "n_1q": 104,
+        "depth": 77,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 30,
+        "n_1q": 112,
+        "depth": 63,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "sabre_buf": {
+        "n_2q": 32,
+        "n_1q": 115,
+        "depth": 61,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "tket_buf": {
+        "n_2q": 38,
+        "n_1q": 130,
+        "depth": 99,
+        "region_id": "Buffered_Sub5_3"
+      }
+    },
+    "W19_qaoa_dense_5q_v4": {
+      "id": "W19_qaoa_dense_5q_v4",
+      "family": "F2_qaoa_dense",
+      "n_qubits": 5,
+      "depth_tier": 4,
+      "group_id": "G12",
+      "pos_in_group": 3,
+      "observable_meta": {
+        "type": "maxcut_qaoa",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "weights": {
+          "0_1": 1.3952,
+          "0_2": 1.186,
+          "0_3": 1.3468,
+          "0_4": 0.5144,
+          "1_2": 0.7547,
+          "1_3": 1.2695,
+          "1_4": 1.1175,
+          "2_3": 1.4374
+        },
+        "p_layers": 2
+      },
+      "ideal_probs": {
+        "00000": 0.20355207132602174,
+        "10000": 0.013008121575076689,
+        "01000": 0.01215198279126062,
+        "11000": 0.02519811342114996,
+        "00100": 0.0038370679635741176,
+        "10100": 0.021175248698120163,
+        "01100": 0.0009634166210068353,
+        "11100": 0.017568120378378155,
+        "00010": 0.008655059666737592,
+        "10010": 0.026076388813478568,
+        "01010": 0.011262116875431995,
+        "11010": 0.00601284123717454,
+        "00110": 0.026929581249089025,
+        "10110": 0.04470098891405914,
+        "01110": 0.010213220306978313,
+        "11110": 0.06869566016246204,
+        "00001": 0.06869566016246204,
+        "10001": 0.010213220306978313,
+        "01001": 0.04470098891405914,
+        "11001": 0.026929581249089025,
+        "00101": 0.00601284123717454,
+        "10101": 0.011262116875431995,
+        "01101": 0.026076388813478568,
+        "11101": 0.008655059666737592,
+        "00011": 0.017568120378378155,
+        "10011": 0.0009634166210068353,
+        "01011": 0.021175248698120163,
+        "11011": 0.0038370679635741176,
+        "00111": 0.02519811342114996,
+        "10111": 0.01215198279126062,
+        "01111": 0.013008121575076689,
+        "11111": 0.20355207132602174
+      },
+      "sabre_def": {
+        "n_2q": 44,
+        "n_1q": 130,
+        "depth": 118,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 47,
+        "n_1q": 141,
+        "depth": 90,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 44,
+        "n_1q": 134,
+        "depth": 95,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "sabre_buf": {
+        "n_2q": 44,
+        "n_1q": 134,
+        "depth": 95,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "tket_buf": {
+        "n_2q": 48,
+        "n_1q": 143,
+        "depth": 102,
+        "region_id": "Buffered_Sub5_4"
+      }
+    },
+    "W29_qaoa_sparse_5q_v4": {
+      "id": "W29_qaoa_sparse_5q_v4",
+      "family": "F3_qaoa_sparse",
+      "n_qubits": 5,
+      "depth_tier": 4,
+      "group_id": "G13",
+      "pos_in_group": 0,
+      "observable_meta": {
+        "type": "maxcut_qaoa",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "weights": {
+          "0_1": 1.2666,
+          "1_2": 1.3619,
+          "2_3": 0.8714,
+          "3_4": 1.2117,
+          "4_0": 0.6516,
+          "0_2": 1.198
+        },
+        "p_layers": 2
+      },
+      "ideal_probs": {
+        "00000": 0.11471882613064424,
+        "10000": 0.007681536701740472,
+        "01000": 0.11642728195115164,
+        "11000": 0.062010663807905236,
+        "00100": 0.030300911982997728,
+        "10100": 0.045926618971114566,
+        "01100": 0.04169621015672729,
+        "11100": 0.028723911064341388,
+        "00010": 0.005875121826379765,
+        "10010": 0.00030161294642470015,
+        "01010": 0.004243858797033799,
+        "11010": 0.0076078917021944175,
+        "00110": 0.002349291732437394,
+        "10110": 0.01736203278471074,
+        "01110": 0.012766223396107605,
+        "11110": 0.0020080060480888746,
+        "00001": 0.0020080060480888746,
+        "10001": 0.012766223396107605,
+        "01001": 0.01736203278471074,
+        "11001": 0.002349291732437394,
+        "00101": 0.0076078917021944175,
+        "10101": 0.004243858797033799,
+        "01101": 0.00030161294642470015,
+        "11101": 0.005875121826379765,
+        "00011": 0.028723911064341388,
+        "10011": 0.04169621015672729,
+        "01011": 0.045926618971114566,
+        "11011": 0.030300911982997728,
+        "00111": 0.062010663807905236,
+        "10111": 0.11642728195115164,
+        "01111": 0.007681536701740472,
+        "11111": 0.11471882613064424
+      },
+      "sabre_def": {
+        "n_2q": 30,
+        "n_1q": 96,
+        "depth": 78,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 33,
+        "n_1q": 111,
+        "depth": 91,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 31,
+        "n_1q": 103,
+        "depth": 76,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "sabre_buf": {
+        "n_2q": 31,
+        "n_1q": 103,
+        "depth": 76,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "tket_buf": {
+        "n_2q": 36,
+        "n_1q": 120,
+        "depth": 91,
+        "region_id": "Buffered_Sub5_1"
+      }
+    },
+    "W39_chem_ansatz_5q_v4": {
+      "id": "W39_chem_ansatz_5q_v4",
+      "family": "F4_chem_ansatz",
+      "n_qubits": 5,
+      "depth_tier": 4,
+      "group_id": "G13",
+      "pos_in_group": 1,
+      "observable_meta": {
+        "type": "circuit_benchmark_ansatz",
+        "layers": 3
+      },
+      "ideal_probs": {
+        "00000": 0.0014221351521337565,
+        "10000": 0.0016692502883267372,
+        "01000": 0.12129310596102899,
+        "11000": 0.043923536015425785,
+        "00100": 0.07794342302764201,
+        "10100": 0.02336979216343245,
+        "01100": 0.318130641405326,
+        "11100": 0.054304996974776,
+        "00010": 0.004017347730547503,
+        "10010": 0.002478387310094338,
+        "01010": 0.03909564227779552,
+        "11010": 0.006319983932704498,
+        "00110": 0.002355648289874089,
+        "10110": 0.0028594234525015634,
+        "01110": 0.020305410422178597,
+        "11110": 0.004684791663942422,
+        "00001": 0.00017174458476867423,
+        "10001": 0.000517592855787015,
+        "01001": 0.014638129795654892,
+        "11001": 0.005364524443407273,
+        "00101": 0.009016168175291358,
+        "10101": 0.0019842312454093356,
+        "01101": 0.029015133576668798,
+        "11101": 0.0054729014304480735,
+        "00011": 0.006235814008576745,
+        "10011": 0.004126211903965556,
+        "01011": 0.05711219120593501,
+        "11011": 0.008978719505603971,
+        "00111": 0.010525660913415719,
+        "10111": 0.007980999943014488,
+        "01111": 0.09178247836431959,
+        "11111": 0.022903981980003086
+      },
+      "sabre_def": {
+        "n_2q": 24,
+        "n_1q": 86,
+        "depth": 50,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 24,
+        "n_1q": 74,
+        "depth": 50,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 24,
+        "n_1q": 86,
+        "depth": 50,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "sabre_buf": {
+        "n_2q": 24,
+        "n_1q": 86,
+        "depth": 50,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "tket_buf": {
+        "n_2q": 24,
+        "n_1q": 74,
+        "depth": 50,
+        "region_id": "Buffered_Sub5_2"
+      }
+    },
+    "W49_dense_ent_5q_v4": {
+      "id": "W49_dense_ent_5q_v4",
+      "family": "F5_dense_entangler",
+      "n_qubits": 5,
+      "depth_tier": 4,
+      "group_id": "G13",
+      "pos_in_group": 2,
+      "observable_meta": {
+        "type": "distribution_overlap",
+        "rounds": 2
+      },
+      "ideal_probs": {
+        "00000": 0.02923231909170638,
+        "10000": 0.0304305900764337,
+        "01000": 0.05785340363080533,
+        "11000": 0.009980637418874222,
+        "00100": 0.001539252761379447,
+        "10100": 0.004363865173981808,
+        "01100": 0.0030996347293306085,
+        "11100": 0.0009662092528966535,
+        "00010": 0.024073612142111237,
+        "10010": 0.008538383165023703,
+        "01010": 0.13010069045935085,
+        "11010": 0.021696975264291127,
+        "00110": 0.007626105737082406,
+        "10110": 0.07203842147352198,
+        "01110": 0.030622911836349766,
+        "11110": 0.04231483241105932,
+        "00001": 0.025031340614163716,
+        "10001": 0.007147368567027562,
+        "01001": 0.03459138282691846,
+        "11001": 0.0028048353768775898,
+        "00101": 0.03893432073345671,
+        "10101": 0.019784342476175488,
+        "01101": 0.002616693874443986,
+        "11101": 0.009271875565148678,
+        "00011": 0.13337066169311987,
+        "10011": 0.049161312499535204,
+        "01011": 0.03300742976746756,
+        "11011": 0.005059705993396534,
+        "00111": 0.12519878590893363,
+        "10111": 0.03467736309682911,
+        "01111": 0.0023132482149185027,
+        "11111": 0.0025514881673889566
+      },
+      "sabre_def": {
+        "n_2q": 35,
+        "n_1q": 117,
+        "depth": 83,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 43,
+        "n_1q": 155,
+        "depth": 125,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 35,
+        "n_1q": 117,
+        "depth": 83,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "sabre_buf": {
+        "n_2q": 37,
+        "n_1q": 115,
+        "depth": 84,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "tket_buf": {
+        "n_2q": 40,
+        "n_1q": 142,
+        "depth": 100,
+        "region_id": "Buffered_Sub5_3"
+      }
+    },
+    "W59_trotter_5q_v4": {
+      "id": "W59_trotter_5q_v4",
+      "family": "F6_trotter",
+      "n_qubits": 5,
+      "depth_tier": 4,
+      "group_id": "G13",
+      "pos_in_group": 3,
+      "observable_meta": {
+        "type": "spin_chain_trotter",
+        "steps": 2,
+        "jx": 0.3616,
+        "jz": 0.6242,
+        "hx": 0.3771
+      },
+      "ideal_probs": {
+        "00000": 0.004580995419257919,
+        "10000": 3.1616144617451996e-05,
+        "01000": 0.03292009582033642,
+        "11000": 0.005184405520576555,
+        "00100": 0.0004302583068139882,
+        "10100": 0.02275611331969934,
+        "01100": 0.008899757570791162,
+        "11100": 0.00471809353542879,
+        "00010": 0.01192129917209986,
+        "10010": 0.0373747904876358,
+        "01010": 0.1038150630923482,
+        "11010": 0.011418107500532487,
+        "00110": 0.005026419188348366,
+        "10110": 0.0743602209186845,
+        "01110": 0.04965716122767222,
+        "11110": 0.018629250058068116,
+        "00001": 0.0031739065413238653,
+        "10001": 0.04733916909589738,
+        "01001": 0.061864524808998414,
+        "11001": 0.007443938595268282,
+        "00101": 0.048797856427354486,
+        "10101": 0.16858798750200857,
+        "01101": 0.062423343043429426,
+        "11101": 0.06226324140932289,
+        "00011": 0.005304526380968185,
+        "10011": 0.0008499483299146451,
+        "01011": 0.03447200846533567,
+        "11011": 0.01452285506595091,
+        "00111": 0.013451844321949657,
+        "10111": 0.04458699949261106,
+        "01111": 0.02419432041246734,
+        "11111": 0.008999882824287764
+      },
+      "sabre_def": {
+        "n_2q": 24,
+        "n_1q": 101,
+        "depth": 55,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 24,
+        "n_1q": 98,
+        "depth": 56,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 24,
+        "n_1q": 101,
+        "depth": 55,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "sabre_buf": {
+        "n_2q": 24,
+        "n_1q": 101,
+        "depth": 55,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "tket_buf": {
+        "n_2q": 24,
+        "n_1q": 98,
+        "depth": 56,
+        "region_id": "Buffered_Sub5_4"
+      }
+    },
+    "W10_qft_5q_v5": {
+      "id": "W10_qft_5q_v5",
+      "family": "F1_qft",
+      "n_qubits": 5,
+      "depth_tier": 5,
+      "group_id": "G14",
+      "pos_in_group": 0,
+      "observable_meta": {
+        "type": "distribution_overlap"
+      },
+      "ideal_probs": {
+        "00000": 0.07255636817113556,
+        "10000": 0.0017572727347391545,
+        "01000": 0.021353343387106795,
+        "11000": 0.017755447622973448,
+        "00100": 0.0019431572844714265,
+        "10100": 0.06455751692396812,
+        "01100": 0.02456665414189799,
+        "11100": 0.05308491833913448,
+        "00010": 0.04548794613699201,
+        "10010": 0.000802189138779776,
+        "01010": 0.0055239963732544636,
+        "11010": 0.041875161720103464,
+        "00110": 0.059318857257384845,
+        "10110": 0.009047907804893857,
+        "01110": 0.01027482772633476,
+        "11110": 0.11529772455095028,
+        "00001": 0.04816014444333727,
+        "10001": 0.0026160712201543364,
+        "01001": 0.01579541656770824,
+        "11001": 0.01735179913450595,
+        "00101": 0.008837760917205475,
+        "10101": 0.04229299465098877,
+        "01101": 0.0037510196030225863,
+        "11101": 0.08819631820700215,
+        "00011": 0.026311045050199346,
+        "10011": 0.028478895330863258,
+        "01011": 0.02354137535475932,
+        "11011": 0.014730656176582629,
+        "00111": 0.04127350878080337,
+        "10111": 0.008500689116287171,
+        "01111": 0.009584466774624635,
+        "11111": 0.07537454935783508
+      },
+      "sabre_def": {
+        "n_2q": 45,
+        "n_1q": 140,
+        "depth": 100,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 43,
+        "n_1q": 142,
+        "depth": 119,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 40,
+        "n_1q": 129,
+        "depth": 85,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "sabre_buf": {
+        "n_2q": 40,
+        "n_1q": 129,
+        "depth": 85,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "tket_buf": {
+        "n_2q": 49,
+        "n_1q": 160,
+        "depth": 114,
+        "region_id": "Buffered_Sub5_1"
+      }
+    },
+    "W20_qaoa_dense_5q_v5": {
+      "id": "W20_qaoa_dense_5q_v5",
+      "family": "F2_qaoa_dense",
+      "n_qubits": 5,
+      "depth_tier": 5,
+      "group_id": "G14",
+      "pos_in_group": 1,
+      "observable_meta": {
+        "type": "maxcut_qaoa",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        "weights": {
+          "0_1": 0.712,
+          "0_2": 1.1015,
+          "0_3": 1.4858,
+          "0_4": 0.9275,
+          "1_2": 0.8351,
+          "1_3": 0.6827,
+          "1_4": 1.1783
+        },
+        "p_layers": 2
+      },
+      "ideal_probs": {
+        "00000": 0.23011708811904874,
+        "10000": 0.009231351540650965,
+        "01000": 0.011219460258820799,
+        "11000": 0.1368689412405368,
+        "00100": 0.0015756213330473709,
+        "10100": 0.007890876833168135,
+        "01100": 0.0005494286382379252,
+        "11100": 0.007876046161884157,
+        "00010": 0.00325176812286511,
+        "10010": 0.004476493060768789,
+        "01010": 0.027498458245354296,
+        "11010": 0.009257788871441124,
+        "00110": 0.010477042440796636,
+        "10110": 0.004052080549645816,
+        "01110": 0.03517854046921608,
+        "11110": 0.0004790141145174519,
+        "00001": 0.0004790141145174519,
+        "10001": 0.03517854046921608,
+        "01001": 0.004052080549645816,
+        "11001": 0.010477042440796636,
+        "00101": 0.009257788871441124,
+        "10101": 0.027498458245354296,
+        "01101": 0.004476493060768789,
+        "11101": 0.00325176812286511,
+        "00011": 0.007876046161884157,
+        "10011": 0.0005494286382379252,
+        "01011": 0.007890876833168135,
+        "11011": 0.0015756213330473709,
+        "00111": 0.1368689412405368,
+        "10111": 0.011219460258820799,
+        "01111": 0.009231351540650965,
+        "11111": 0.23011708811904874
+      },
+      "sabre_def": {
+        "n_2q": 35,
+        "n_1q": 114,
+        "depth": 95,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 35,
+        "n_1q": 99,
+        "depth": 89,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 38,
+        "n_1q": 121,
+        "depth": 89,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "sabre_buf": {
+        "n_2q": 40,
+        "n_1q": 120,
+        "depth": 90,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "tket_buf": {
+        "n_2q": 41,
+        "n_1q": 120,
+        "depth": 99,
+        "region_id": "Buffered_Sub5_2"
+      }
+    },
+    "W30_qaoa_sparse_5q_v5": {
+      "id": "W30_qaoa_sparse_5q_v5",
+      "family": "F3_qaoa_sparse",
+      "n_qubits": 5,
+      "depth_tier": 5,
+      "group_id": "G14",
+      "pos_in_group": 2,
+      "observable_meta": {
+        "type": "maxcut_qaoa",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        "weights": {
+          "0_1": 1.2649,
+          "1_2": 0.8208,
+          "2_3": 1.2073,
+          "3_4": 0.6263,
+          "4_0": 0.8263
+        },
+        "p_layers": 3
+      },
+      "ideal_probs": {
+        "00000": 0.000991135306999184,
+        "10000": 0.00019562887082135477,
+        "01000": 0.01238719719394955,
+        "11000": 0.002824457922142023,
+        "00100": 0.055775497286936725,
+        "10100": 0.017916524445777002,
+        "01100": 0.02601180791945634,
+        "11100": 0.007198889062629365,
+        "00010": 0.007602646713802517,
+        "10010": 0.09749142990321294,
+        "01010": 0.02066283825755972,
+        "11010": 0.11493458347238728,
+        "00110": 0.03746627346108136,
+        "10110": 0.08143025967949062,
+        "01110": 0.00843682401935716,
+        "11110": 0.008674006484395997,
+        "00001": 0.008674006484395997,
+        "10001": 0.00843682401935716,
+        "01001": 0.08143025967949062,
+        "11001": 0.03746627346108136,
+        "00101": 0.11493458347238728,
+        "10101": 0.02066283825755972,
+        "01101": 0.09749142990321294,
+        "11101": 0.007602646713802517,
+        "00011": 0.007198889062629365,
+        "10011": 0.02601180791945634,
+        "01011": 0.017916524445777002,
+        "11011": 0.055775497286936725,
+        "00111": 0.002824457922142023,
+        "10111": 0.01238719719394955,
+        "01111": 0.00019562887082135477,
+        "11111": 0.000991135306999184
+      },
+      "sabre_def": {
+        "n_2q": 37,
+        "n_1q": 119,
+        "depth": 105,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 39,
+        "n_1q": 132,
+        "depth": 119,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 39,
+        "n_1q": 135,
+        "depth": 100,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "sabre_buf": {
+        "n_2q": 41,
+        "n_1q": 137,
+        "depth": 98,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "tket_buf": {
+        "n_2q": 45,
+        "n_1q": 149,
+        "depth": 110,
+        "region_id": "Buffered_Sub5_3"
+      }
+    },
+    "W40_chem_ansatz_5q_v5": {
+      "id": "W40_chem_ansatz_5q_v5",
+      "family": "F4_chem_ansatz",
+      "n_qubits": 5,
+      "depth_tier": 5,
+      "group_id": "G14",
+      "pos_in_group": 3,
+      "observable_meta": {
+        "type": "circuit_benchmark_ansatz",
+        "layers": 3
+      },
+      "ideal_probs": {
+        "00000": 0.1166805868195434,
+        "10000": 0.055104943161779774,
+        "01000": 0.2254753856459608,
+        "11000": 0.15757602557798608,
+        "00100": 0.020443210464380458,
+        "10100": 0.0019347324172884468,
+        "01100": 0.080611098074302,
+        "11100": 0.03173685235513655,
+        "00010": 0.022421521528621185,
+        "10010": 0.01002039963667907,
+        "01010": 0.0071501952976867275,
+        "11010": 0.006922017072330743,
+        "00110": 0.005630472704043733,
+        "10110": 0.003691103495611523,
+        "01110": 0.06909207707260394,
+        "11110": 0.04547008866378767,
+        "00001": 0.016189301012188302,
+        "10001": 0.008088093756833949,
+        "01001": 0.05255868655054611,
+        "11001": 0.03353837400752948,
+        "00101": 0.008905148521500452,
+        "10101": 0.0016414068375451539,
+        "01101": 0.006900912552343293,
+        "11101": 0.0016110904581250593,
+        "00011": 8.290309960756414e-05,
+        "10011": 1.9297454975465734e-05,
+        "01011": 0.0007583557167014696,
+        "11011": 0.0005244372788688802,
+        "00111": 0.001707131323066513,
+        "10111": 0.0005226694157377292,
+        "01111": 0.0041496819943474235,
+        "11111": 0.0028418000323407583
+      },
+      "sabre_def": {
+        "n_2q": 24,
+        "n_1q": 88,
+        "depth": 50,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 24,
+        "n_1q": 74,
+        "depth": 50,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 24,
+        "n_1q": 88,
+        "depth": 50,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "sabre_buf": {
+        "n_2q": 24,
+        "n_1q": 88,
+        "depth": 50,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "tket_buf": {
+        "n_2q": 24,
+        "n_1q": 74,
+        "depth": 50,
+        "region_id": "Buffered_Sub5_4"
+      }
+    },
+    "W45_dense_ent_4q_v5": {
+      "id": "W45_dense_ent_4q_v5",
+      "family": "F5_dense_entangler",
+      "n_qubits": 4,
+      "depth_tier": 5,
+      "group_id": "G15",
+      "pos_in_group": 0,
+      "observable_meta": {
+        "type": "distribution_overlap",
+        "rounds": 2
+      },
+      "ideal_probs": {
+        "0000": 0.0303551566067283,
+        "1000": 0.0239976605193499,
+        "0100": 0.044583823094225296,
+        "1100": 0.11373389478072876,
+        "0010": 0.14824849034508414,
+        "1010": 0.09417652138128903,
+        "0110": 0.050306561039748926,
+        "1110": 0.0073411184885053965,
+        "0001": 0.059689799324445514,
+        "1001": 0.07482693773572373,
+        "0101": 0.056686340071630814,
+        "1101": 0.01986271553611643,
+        "0011": 0.03306071634020129,
+        "1011": 0.06361966382743028,
+        "0111": 0.04446305872354363,
+        "1111": 0.13504754218524848
+      },
+      "sabre_def": {
+        "n_2q": 25,
+        "n_1q": 82,
+        "depth": 53,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 28,
+        "n_1q": 102,
+        "depth": 74,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 21,
+        "n_1q": 78,
+        "depth": 51,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "sabre_buf": {
+        "n_2q": 21,
+        "n_1q": 78,
+        "depth": 51,
+        "region_id": "Buffered_Sub5_1"
+      },
+      "tket_buf": {
+        "n_2q": 28,
+        "n_1q": 102,
+        "depth": 74,
+        "region_id": "Buffered_Sub5_1"
+      }
+    },
+    "W55_trotter_4q_v5": {
+      "id": "W55_trotter_4q_v5",
+      "family": "F6_trotter",
+      "n_qubits": 4,
+      "depth_tier": 5,
+      "group_id": "G15",
+      "pos_in_group": 1,
+      "observable_meta": {
+        "type": "spin_chain_trotter",
+        "steps": 2,
+        "jx": 0.3439,
+        "jz": 0.2714,
+        "hx": 0.3779
+      },
+      "ideal_probs": {
+        "0000": 0.09188575736060625,
+        "1000": 0.05983799208405077,
+        "0100": 0.09633213527846854,
+        "1100": 0.00939181012829034,
+        "0010": 0.10775728648421533,
+        "1010": 0.15857517469145005,
+        "0110": 0.10263938709196602,
+        "1110": 0.011266472693585732,
+        "0001": 0.011331557696567133,
+        "1001": 0.0748922154231641,
+        "0101": 0.018478091164331474,
+        "1101": 0.02356465853673447,
+        "0011": 0.012522262063054422,
+        "1011": 0.13862058958494866,
+        "0111": 0.01877625513479208,
+        "1111": 0.06412835458377464
+      },
+      "sabre_def": {
+        "n_2q": 12,
+        "n_1q": 54,
+        "depth": 32,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 12,
+        "n_1q": 46,
+        "depth": 32,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 12,
+        "n_1q": 54,
+        "depth": 32,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "sabre_buf": {
+        "n_2q": 12,
+        "n_1q": 54,
+        "depth": 32,
+        "region_id": "Buffered_Sub5_2"
+      },
+      "tket_buf": {
+        "n_2q": 12,
+        "n_1q": 46,
+        "depth": 32,
+        "region_id": "Buffered_Sub5_2"
+      }
+    },
+    "W50_dense_ent_5q_v5": {
+      "id": "W50_dense_ent_5q_v5",
+      "family": "F5_dense_entangler",
+      "n_qubits": 5,
+      "depth_tier": 5,
+      "group_id": "G15",
+      "pos_in_group": 2,
+      "observable_meta": {
+        "type": "distribution_overlap",
+        "rounds": 2
+      },
+      "ideal_probs": {
+        "00000": 0.1088294258865273,
+        "10000": 0.10673312567622217,
+        "01000": 0.014444639607152612,
+        "11000": 0.006984155538471259,
+        "00100": 0.014769028165184352,
+        "10100": 0.005077200563618205,
+        "01100": 0.0022653321610861038,
+        "11100": 0.01839649694664003,
+        "00010": 0.02239239392000432,
+        "10010": 0.00832686949522177,
+        "01010": 0.008413655844074575,
+        "11010": 0.06671676069490373,
+        "00110": 0.013396709222407854,
+        "10110": 0.0035834089465102154,
+        "01110": 0.031139110816538515,
+        "11110": 0.004723090482166105,
+        "00001": 0.08021961303227665,
+        "10001": 0.08397909005774516,
+        "01001": 0.05023482545850846,
+        "11001": 0.001236559010226115,
+        "00101": 0.08414522063485148,
+        "10101": 0.025135366119473677,
+        "01101": 0.0007123050712228655,
+        "11101": 0.0009123378346333406,
+        "00011": 0.008513903278305463,
+        "10011": 0.0008970321745759357,
+        "01011": 0.1039736015040422,
+        "11011": 0.019069817913390737,
+        "00111": 0.01135029935698756,
+        "10111": 0.026144961201348217,
+        "01111": 0.046308563303840214,
+        "11111": 0.02097510008184291
+      },
+      "sabre_def": {
+        "n_2q": 35,
+        "n_1q": 116,
+        "depth": 82,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 43,
+        "n_1q": 155,
+        "depth": 125,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 33,
+        "n_1q": 117,
+        "depth": 78,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "sabre_buf": {
+        "n_2q": 35,
+        "n_1q": 116,
+        "depth": 82,
+        "region_id": "Buffered_Sub5_3"
+      },
+      "tket_buf": {
+        "n_2q": 40,
+        "n_1q": 144,
+        "depth": 104,
+        "region_id": "Buffered_Sub5_3"
+      }
+    },
+    "W60_trotter_5q_v5": {
+      "id": "W60_trotter_5q_v5",
+      "family": "F6_trotter",
+      "n_qubits": 5,
+      "depth_tier": 5,
+      "group_id": "G15",
+      "pos_in_group": 3,
+      "observable_meta": {
+        "type": "spin_chain_trotter",
+        "steps": 2,
+        "jx": 0.6944,
+        "jz": 0.2698,
+        "hx": 0.5151
+      },
+      "ideal_probs": {
+        "00000": 0.0037973725786414414,
+        "10000": 0.011576164602883134,
+        "01000": 0.06216580048033025,
+        "11000": 0.040974472177005145,
+        "00100": 0.0181671223622142,
+        "10100": 0.012897732750924725,
+        "01100": 0.00856311402543524,
+        "11100": 0.03594933327908858,
+        "00010": 0.0073332326464770805,
+        "10010": 0.004763767153237021,
+        "01010": 0.05976658132582362,
+        "11010": 0.09683644050099516,
+        "00110": 0.02028682354992452,
+        "10110": 0.03993933410192192,
+        "01110": 0.013319140823874736,
+        "11110": 0.03737936711381807,
+        "00001": 0.011810912342877572,
+        "10001": 0.0014771514236481926,
+        "01001": 0.04978366496806022,
+        "11001": 0.03256384020215784,
+        "00101": 0.03337035309496777,
+        "10101": 0.007450810167472682,
+        "01101": 0.00518719532792817,
+        "11101": 0.05402125944501717,
+        "00011": 0.007409862653022638,
+        "10011": 0.004731268661320427,
+        "01011": 0.08347821371232192,
+        "11011": 0.150487885848961,
+        "00111": 0.01274921845737053,
+        "10111": 0.04441806715044048,
+        "01111": 0.022100451955659867,
+        "11111": 0.005244045116179061
+      },
+      "sabre_def": {
+        "n_2q": 16,
+        "n_1q": 72,
+        "depth": 38,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "tket_def": {
+        "n_2q": 16,
+        "n_1q": 61,
+        "depth": 38,
+        "region_id": "Unrestricted_Full_Chip"
+      },
+      "prom_buf": {
+        "n_2q": 16,
+        "n_1q": 72,
+        "depth": 38,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "sabre_buf": {
+        "n_2q": 16,
+        "n_1q": 72,
+        "depth": 38,
+        "region_id": "Buffered_Sub5_4"
+      },
+      "tket_buf": {
+        "n_2q": 16,
+        "n_1q": 61,
+        "depth": 38,
+        "region_id": "Buffered_Sub5_4"
+      }
+    }
+  }
+}

@@ -1,0 +1,1019 @@
+{
+  "manifest_type": "PUBLIC_SANITIZED_COMMITMENT_MANIFEST",
+  "original_private_manifest_sha256": "79ec9a36ebfec4fd97ea834bcb14c2233d91698c30eeacaa812bab7da8d88235",
+  "redaction_notice": "Proprietary hardware-aware optimization parameters and physical qubit coordinates are withheld per PUBLIC_DISCLOSURE.md.",
+  "campaign": "IQM_Resonance_Garnet_Phase0_Multiplexing_And_Compiler_Probe",
+  "locked_at_utc": "2026-11-03T05:29:20.865808+00:00",
+  "target_qpu": "garnet",
+  "calibration_set_id": "ce3794d0-9bdc-42a4-88b9-7745688a705c",
+  "observation_set_id": "97a783e4-5b7d-496b-b573-0e4791200f5a",
+  "calibration_created_timestamp": "2026-11-03 02:40:21.774301+00:00",
+  "shots_per_circuit": 512,
+  "qualification_threshold_F_B": 0.85,
+  "randomized_m1_order": [
+    {
+      "shuffled_idx": 0,
+      "kind": "iso",
+      "workload": "W5_qft_5q",
+      "arm": "arm3_prom_iso_buf",
+      "circuit_name": "iso_W5_qft_5q_prom_buf"
+    },
+    {
+      "shuffled_idx": 1,
+      "kind": "pack2",
+      "workload": [
+        "W7_dense_ent_5q",
+        "W8_trotter_5q"
+      ],
+      "arm": "arm3_tket_pack_buf",
+      "circuit_name": "pack2_P4_tket_buf"
+    },
+    {
+      "shuffled_idx": 2,
+      "kind": "iso",
+      "workload": "W4_cross_ent_4q",
+      "arm": "arm3_prom_iso_buf",
+      "circuit_name": "iso_W4_cross_ent_4q_prom_buf"
+    },
+    {
+      "shuffled_idx": 3,
+      "kind": "iso",
+      "workload": "W4_cross_ent_4q",
+      "arm": "arm1_tket_def",
+      "circuit_name": "iso_W4_cross_ent_4q_tket_def"
+    },
+    {
+      "shuffled_idx": 4,
+      "kind": "iso",
+      "workload": "W3_chem_hea_4q",
+      "arm": "arm3_sabre_iso_buf",
+      "circuit_name": "iso_W3_chem_hea_4q_sabre_buf"
+    },
+    {
+      "shuffled_idx": 5,
+      "kind": "pack2",
+      "workload": [
+        "W7_dense_ent_5q",
+        "W8_trotter_5q"
+      ],
+      "arm": "arm2_prom_pack_adj",
+      "circuit_name": "pack2_P4_prom_adj"
+    },
+    {
+      "shuffled_idx": 6,
+      "kind": "pack2",
+      "workload": [
+        "W3_chem_hea_4q",
+        "W4_cross_ent_4q"
+      ],
+      "arm": "arm3_prom_pack_buf",
+      "circuit_name": "pack2_P2_prom_buf"
+    },
+    {
+      "shuffled_idx": 7,
+      "kind": "iso",
+      "workload": "W6_qaoa_sparse_5q",
+      "arm": "arm1_sabre_def",
+      "circuit_name": "iso_W6_qaoa_sparse_5q_sabre_def"
+    },
+    {
+      "shuffled_idx": 8,
+      "kind": "pack2",
+      "workload": [
+        "W5_qft_5q",
+        "W6_qaoa_sparse_5q"
+      ],
+      "arm": "arm3_tket_pack_buf",
+      "circuit_name": "pack2_P3_tket_buf"
+    },
+    {
+      "shuffled_idx": 9,
+      "kind": "iso",
+      "workload": "W1_qft_4q",
+      "arm": "arm3_tket_iso_buf",
+      "circuit_name": "iso_W1_qft_4q_tket_buf"
+    },
+    {
+      "shuffled_idx": 10,
+      "kind": "iso",
+      "workload": "W5_qft_5q",
+      "arm": "arm3_sabre_iso_buf",
+      "circuit_name": "iso_W5_qft_5q_sabre_buf"
+    },
+    {
+      "shuffled_idx": 11,
+      "kind": "iso",
+      "workload": "W7_dense_ent_5q",
+      "arm": "arm3_prom_iso_buf",
+      "circuit_name": "iso_W7_dense_ent_5q_prom_buf"
+    },
+    {
+      "shuffled_idx": 12,
+      "kind": "iso",
+      "workload": "W4_cross_ent_4q",
+      "arm": "arm3_sabre_iso_buf",
+      "circuit_name": "iso_W4_cross_ent_4q_sabre_buf"
+    },
+    {
+      "shuffled_idx": 13,
+      "kind": "iso",
+      "workload": "W6_qaoa_sparse_5q",
+      "arm": "arm3_tket_iso_buf",
+      "circuit_name": "iso_W6_qaoa_sparse_5q_tket_buf"
+    },
+    {
+      "shuffled_idx": 14,
+      "kind": "iso",
+      "workload": "W5_qft_5q",
+      "arm": "arm1_tket_def",
+      "circuit_name": "iso_W5_qft_5q_tket_def"
+    },
+    {
+      "shuffled_idx": 15,
+      "kind": "iso",
+      "workload": "W5_qft_5q",
+      "arm": "arm1_sabre_def",
+      "circuit_name": "iso_W5_qft_5q_sabre_def"
+    },
+    {
+      "shuffled_idx": 16,
+      "kind": "iso",
+      "workload": "W5_qft_5q",
+      "arm": "arm3_tket_iso_buf",
+      "circuit_name": "iso_W5_qft_5q_tket_buf"
+    },
+    {
+      "shuffled_idx": 17,
+      "kind": "iso",
+      "workload": "W1_qft_4q",
+      "arm": "arm1_tket_def",
+      "circuit_name": "iso_W1_qft_4q_tket_def"
+    },
+    {
+      "shuffled_idx": 18,
+      "kind": "iso",
+      "workload": "W7_dense_ent_5q",
+      "arm": "arm3_tket_iso_buf",
+      "circuit_name": "iso_W7_dense_ent_5q_tket_buf"
+    },
+    {
+      "shuffled_idx": 19,
+      "kind": "iso",
+      "workload": "W8_trotter_5q",
+      "arm": "arm3_prom_iso_buf",
+      "circuit_name": "iso_W8_trotter_5q_prom_buf"
+    },
+    {
+      "shuffled_idx": 20,
+      "kind": "iso",
+      "workload": "W8_trotter_5q",
+      "arm": "arm3_sabre_iso_buf",
+      "circuit_name": "iso_W8_trotter_5q_sabre_buf"
+    },
+    {
+      "shuffled_idx": 21,
+      "kind": "iso",
+      "workload": "W6_qaoa_sparse_5q",
+      "arm": "arm3_sabre_iso_buf",
+      "circuit_name": "iso_W6_qaoa_sparse_5q_sabre_buf"
+    },
+    {
+      "shuffled_idx": 22,
+      "kind": "iso",
+      "workload": "W3_chem_hea_4q",
+      "arm": "arm3_tket_iso_buf",
+      "circuit_name": "iso_W3_chem_hea_4q_tket_buf"
+    },
+    {
+      "shuffled_idx": 23,
+      "kind": "iso",
+      "workload": "W8_trotter_5q",
+      "arm": "arm1_sabre_def",
+      "circuit_name": "iso_W8_trotter_5q_sabre_def"
+    },
+    {
+      "shuffled_idx": 24,
+      "kind": "iso",
+      "workload": "W2_qaoa_dense_4q",
+      "arm": "arm1_tket_def",
+      "circuit_name": "iso_W2_qaoa_dense_4q_tket_def"
+    },
+    {
+      "shuffled_idx": 25,
+      "kind": "pack2",
+      "workload": [
+        "W7_dense_ent_5q",
+        "W8_trotter_5q"
+      ],
+      "arm": "arm3_sabre_pack_buf",
+      "circuit_name": "pack2_P4_sabre_buf"
+    },
+    {
+      "shuffled_idx": 26,
+      "kind": "iso",
+      "workload": "W1_qft_4q",
+      "arm": "arm3_prom_iso_buf",
+      "circuit_name": "iso_W1_qft_4q_prom_buf"
+    },
+    {
+      "shuffled_idx": 27,
+      "kind": "iso",
+      "workload": "W1_qft_4q",
+      "arm": "arm1_sabre_def",
+      "circuit_name": "iso_W1_qft_4q_sabre_def"
+    },
+    {
+      "shuffled_idx": 28,
+      "kind": "pack2",
+      "workload": [
+        "W1_qft_4q",
+        "W2_qaoa_dense_4q"
+      ],
+      "arm": "arm3_tket_pack_buf",
+      "circuit_name": "pack2_P1_tket_buf"
+    },
+    {
+      "shuffled_idx": 29,
+      "kind": "pack2",
+      "workload": [
+        "W1_qft_4q",
+        "W2_qaoa_dense_4q"
+      ],
+      "arm": "arm3_prom_pack_buf",
+      "circuit_name": "pack2_P1_prom_buf"
+    },
+    {
+      "shuffled_idx": 30,
+      "kind": "pack2",
+      "workload": [
+        "W5_qft_5q",
+        "W6_qaoa_sparse_5q"
+      ],
+      "arm": "arm2_prom_pack_adj",
+      "circuit_name": "pack2_P3_prom_adj"
+    },
+    {
+      "shuffled_idx": 31,
+      "kind": "iso",
+      "workload": "W3_chem_hea_4q",
+      "arm": "arm3_prom_iso_buf",
+      "circuit_name": "iso_W3_chem_hea_4q_prom_buf"
+    },
+    {
+      "shuffled_idx": 32,
+      "kind": "iso",
+      "workload": "W7_dense_ent_5q",
+      "arm": "arm1_tket_def",
+      "circuit_name": "iso_W7_dense_ent_5q_tket_def"
+    },
+    {
+      "shuffled_idx": 33,
+      "kind": "iso",
+      "workload": "W4_cross_ent_4q",
+      "arm": "arm2_prom_iso_adj",
+      "circuit_name": "iso_W4_cross_ent_4q_prom_adj"
+    },
+    {
+      "shuffled_idx": 34,
+      "kind": "iso",
+      "workload": "W6_qaoa_sparse_5q",
+      "arm": "arm3_prom_iso_buf",
+      "circuit_name": "iso_W6_qaoa_sparse_5q_prom_buf"
+    },
+    {
+      "shuffled_idx": 35,
+      "kind": "iso",
+      "workload": "W7_dense_ent_5q",
+      "arm": "arm3_sabre_iso_buf",
+      "circuit_name": "iso_W7_dense_ent_5q_sabre_buf"
+    },
+    {
+      "shuffled_idx": 36,
+      "kind": "pack2",
+      "workload": [
+        "W3_chem_hea_4q",
+        "W4_cross_ent_4q"
+      ],
+      "arm": "arm3_tket_pack_buf",
+      "circuit_name": "pack2_P2_tket_buf"
+    },
+    {
+      "shuffled_idx": 37,
+      "kind": "iso",
+      "workload": "W8_trotter_5q",
+      "arm": "arm3_tket_iso_buf",
+      "circuit_name": "iso_W8_trotter_5q_tket_buf"
+    },
+    {
+      "shuffled_idx": 38,
+      "kind": "pack2",
+      "workload": [
+        "W3_chem_hea_4q",
+        "W4_cross_ent_4q"
+      ],
+      "arm": "arm2_prom_pack_adj",
+      "circuit_name": "pack2_P2_prom_adj"
+    },
+    {
+      "shuffled_idx": 39,
+      "kind": "iso",
+      "workload": "W4_cross_ent_4q",
+      "arm": "arm3_tket_iso_buf",
+      "circuit_name": "iso_W4_cross_ent_4q_tket_buf"
+    },
+    {
+      "shuffled_idx": 40,
+      "kind": "pack2",
+      "workload": [
+        "W5_qft_5q",
+        "W6_qaoa_sparse_5q"
+      ],
+      "arm": "arm3_sabre_pack_buf",
+      "circuit_name": "pack2_P3_sabre_buf"
+    },
+    {
+      "shuffled_idx": 41,
+      "kind": "iso",
+      "workload": "W6_qaoa_sparse_5q",
+      "arm": "arm1_tket_def",
+      "circuit_name": "iso_W6_qaoa_sparse_5q_tket_def"
+    },
+    {
+      "shuffled_idx": 42,
+      "kind": "iso",
+      "workload": "W3_chem_hea_4q",
+      "arm": "arm1_sabre_def",
+      "circuit_name": "iso_W3_chem_hea_4q_sabre_def"
+    },
+    {
+      "shuffled_idx": 43,
+      "kind": "iso",
+      "workload": "W2_qaoa_dense_4q",
+      "arm": "arm3_prom_iso_buf",
+      "circuit_name": "iso_W2_qaoa_dense_4q_prom_buf"
+    },
+    {
+      "shuffled_idx": 44,
+      "kind": "iso",
+      "workload": "W6_qaoa_sparse_5q",
+      "arm": "arm2_prom_iso_adj",
+      "circuit_name": "iso_W6_qaoa_sparse_5q_prom_adj"
+    },
+    {
+      "shuffled_idx": 45,
+      "kind": "pack2",
+      "workload": [
+        "W1_qft_4q",
+        "W2_qaoa_dense_4q"
+      ],
+      "arm": "arm2_prom_pack_adj",
+      "circuit_name": "pack2_P1_prom_adj"
+    },
+    {
+      "shuffled_idx": 46,
+      "kind": "iso",
+      "workload": "W8_trotter_5q",
+      "arm": "arm2_prom_iso_adj",
+      "circuit_name": "iso_W8_trotter_5q_prom_adj"
+    },
+    {
+      "shuffled_idx": 47,
+      "kind": "pack2",
+      "workload": [
+        "W1_qft_4q",
+        "W2_qaoa_dense_4q"
+      ],
+      "arm": "arm3_sabre_pack_buf",
+      "circuit_name": "pack2_P1_sabre_buf"
+    },
+    {
+      "shuffled_idx": 48,
+      "kind": "iso",
+      "workload": "W4_cross_ent_4q",
+      "arm": "arm1_sabre_def",
+      "circuit_name": "iso_W4_cross_ent_4q_sabre_def"
+    },
+    {
+      "shuffled_idx": 49,
+      "kind": "iso",
+      "workload": "W7_dense_ent_5q",
+      "arm": "arm1_sabre_def",
+      "circuit_name": "iso_W7_dense_ent_5q_sabre_def"
+    },
+    {
+      "shuffled_idx": 50,
+      "kind": "iso",
+      "workload": "W1_qft_4q",
+      "arm": "arm3_sabre_iso_buf",
+      "circuit_name": "iso_W1_qft_4q_sabre_buf"
+    },
+    {
+      "shuffled_idx": 51,
+      "kind": "iso",
+      "workload": "W2_qaoa_dense_4q",
+      "arm": "arm3_sabre_iso_buf",
+      "circuit_name": "iso_W2_qaoa_dense_4q_sabre_buf"
+    },
+    {
+      "shuffled_idx": 52,
+      "kind": "pack2",
+      "workload": [
+        "W3_chem_hea_4q",
+        "W4_cross_ent_4q"
+      ],
+      "arm": "arm3_sabre_pack_buf",
+      "circuit_name": "pack2_P2_sabre_buf"
+    },
+    {
+      "shuffled_idx": 53,
+      "kind": "pack2",
+      "workload": [
+        "W5_qft_5q",
+        "W6_qaoa_sparse_5q"
+      ],
+      "arm": "arm3_prom_pack_buf",
+      "circuit_name": "pack2_P3_prom_buf"
+    },
+    {
+      "shuffled_idx": 54,
+      "kind": "iso",
+      "workload": "W8_trotter_5q",
+      "arm": "arm1_tket_def",
+      "circuit_name": "iso_W8_trotter_5q_tket_def"
+    },
+    {
+      "shuffled_idx": 55,
+      "kind": "iso",
+      "workload": "W3_chem_hea_4q",
+      "arm": "arm1_tket_def",
+      "circuit_name": "iso_W3_chem_hea_4q_tket_def"
+    },
+    {
+      "shuffled_idx": 56,
+      "kind": "pack2",
+      "workload": [
+        "W7_dense_ent_5q",
+        "W8_trotter_5q"
+      ],
+      "arm": "arm3_prom_pack_buf",
+      "circuit_name": "pack2_P4_prom_buf"
+    },
+    {
+      "shuffled_idx": 57,
+      "kind": "iso",
+      "workload": "W2_qaoa_dense_4q",
+      "arm": "arm2_prom_iso_adj",
+      "circuit_name": "iso_W2_qaoa_dense_4q_prom_adj"
+    },
+    {
+      "shuffled_idx": 58,
+      "kind": "iso",
+      "workload": "W2_qaoa_dense_4q",
+      "arm": "arm3_tket_iso_buf",
+      "circuit_name": "iso_W2_qaoa_dense_4q_tket_buf"
+    },
+    {
+      "shuffled_idx": 59,
+      "kind": "iso",
+      "workload": "W2_qaoa_dense_4q",
+      "arm": "arm1_sabre_def",
+      "circuit_name": "iso_W2_qaoa_dense_4q_sabre_def"
+    }
+  ],
+  "workloads": {
+    "W1_qft_4q": {
+      "n_qubits": 4,
+      "pair": "P1",
+      "family": "QFT",
+      "ideal_probs": {
+        "0000": 0.1249999999999999,
+        "1000": 0.10669417382415916,
+        "0100": 0.06249999999999996,
+        "1100": 0.018305826175840766,
+        "1010": 0.018305826175840766,
+        "0110": 0.062499999999999944,
+        "1110": 0.10669417382415912,
+        "0001": 0.1249999999999999,
+        "1001": 0.10669417382415916,
+        "0101": 0.06249999999999996,
+        "1101": 0.018305826175840766,
+        "1011": 0.018305826175840766,
+        "0111": 0.062499999999999944,
+        "1111": 0.10669417382415912
+      },
+      "structural": {
+        "sabre_def": {
+          "n_2q": 18,
+          "n_1q": 58,
+          "depth": 39,
+          "region_class": "Default_Connected"
+        },
+        "tket_def": {
+          "n_2q": 21,
+          "n_1q": 69,
+          "depth": 57,
+          "region_class": "Default_Connected"
+        },
+        "prom_buf": {
+          "n_2q": 16,
+          "n_1q": 57,
+          "depth": 35,
+          "region_class": "Buffered_Disjoint_dG_ge_2"
+        },
+        "sabre_buf": {
+          "n_2q": 18,
+          "n_1q": 58,
+          "depth": 39,
+          "region_class": "Buffered_Disjoint_dG_ge_2"
+        },
+        "tket_buf": {
+          "n_2q": 21,
+          "n_1q": 69,
+          "depth": 57,
+          "region_class": "Buffered_Disjoint_dG_ge_2"
+        },
+        "prom_adj": {
+          "n_2q": 16,
+          "n_1q": 57,
+          "depth": 35,
+          "region_class": "Adjacent_dG_1"
+        }
+      }
+    },
+    "W2_qaoa_dense_4q": {
+      "n_qubits": 4,
+      "pair": "P1",
+      "family": "Dense_QAOA",
+      "ideal_probs": {
+        "0000": 0.318552915069203,
+        "1000": 0.01189753395882548,
+        "0100": 0.021414899708447132,
+        "1100": 0.02422394241317294,
+        "0010": 0.04195056040516227,
+        "1010": 0.03779308161573299,
+        "0110": 0.032269532870630314,
+        "1110": 0.01189753395882548,
+        "0001": 0.01189753395882548,
+        "1001": 0.032269532870630314,
+        "0101": 0.03779308161573299,
+        "1101": 0.04195056040516227,
+        "0011": 0.02422394241317294,
+        "1011": 0.021414899708447132,
+        "0111": 0.01189753395882548,
+        "1111": 0.318552915069203
+      },
+      "structural": {
+        "sabre_def": {
+          "n_2q": 18,
+          "n_1q": 49,
+          "depth": 32,
+          "region_class": "Default_Connected"
+        },
+        "tket_def": {
+          "n_2q": 21,
+          "n_1q": 70,
+          "depth": 55,
+          "region_class": "Default_Connected"
+        },
+        "prom_buf": {
+          "n_2q": 14,
+          "n_1q": 57,
+          "depth": 38,
+          "region_class": "Buffered_Disjoint_dG_ge_2"
+        },
+        "sabre_buf": {
+          "n_2q": 18,
+          "n_1q": 49,
+          "depth": 32,
+          "region_class": "Buffered_Disjoint_dG_ge_2"
+        },
+        "tket_buf": {
+          "n_2q": 21,
+          "n_1q": 70,
+          "depth": 55,
+          "region_class": "Buffered_Disjoint_dG_ge_2"
+        },
+        "prom_adj": {
+          "n_2q": 14,
+          "n_1q": 57,
+          "depth": 38,
+          "region_class": "Adjacent_dG_1"
+        }
+      }
+    },
+    "W3_chem_hea_4q": {
+      "n_qubits": 4,
+      "pair": "P2",
+      "family": "Chemistry_HEA",
+      "ideal_probs": {
+        "0000": 0.0013473239734376448,
+        "1000": 0.00420854322990389,
+        "0100": 0.00356073702812011,
+        "1100": 0.014815087321348366,
+        "0010": 0.029841335012508803,
+        "1010": 0.025182395008829368,
+        "0110": 0.007664895885277909,
+        "1110": 0.5963656254813565,
+        "0001": 0.002366582320676179,
+        "1001": 0.05222599428592738,
+        "0101": 0.000874354690649016,
+        "1101": 0.04349912138165612,
+        "0011": 0.0028678618222226305,
+        "1011": 0.0730665447950552,
+        "0111": 0.04784375314446683,
+        "1111": 0.09426984461856411
+      },
+      "structural": {
+        "sabre_def": {
+          "n_2q": 11,
+          "n_1q": 37,
+          "depth": 26,
+          "region_class": "Default_Connected"
+        },
+        "tket_def": {
+          "n_2q": 11,
+          "n_1q": 44,
+          "depth": 29,
+          "region_class": "Default_Connected"
+        },
+        "prom_buf": {
+          "n_2q": 11,
+          "n_1q": 35,
+          "depth": 24,
+          "region_class": "Buffered_Disjoint_dG_ge_2"
+        },
+        "sabre_buf": {
+          "n_2q": 11,
+          "n_1q": 37,
+          "depth": 26,
+          "region_class": "Buffered_Disjoint_dG_ge_2"
+        },
+        "tket_buf": {
+          "n_2q": 11,
+          "n_1q": 44,
+          "depth": 29,
+          "region_class": "Buffered_Disjoint_dG_ge_2"
+        },
+        "prom_adj": {
+          "n_2q": 11,
+          "n_1q": 35,
+          "depth": 24,
+          "region_class": "Adjacent_dG_1"
+        }
+      }
+    },
+    "W4_cross_ent_4q": {
+      "n_qubits": 4,
+      "pair": "P2",
+      "family": "Cross_Entangler",
+      "ideal_probs": {
+        "0000": 0.020431440610286764,
+        "1000": 0.0293149965758991,
+        "0100": 0.028231896308044183,
+        "1100": 0.03540615133913593,
+        "0010": 0.06740232356094146,
+        "1010": 0.06656215460131391,
+        "0110": 0.04442786398532569,
+        "1110": 0.1401554339300608,
+        "0001": 0.06521781716892681,
+        "1001": 0.039509855180425095,
+        "0101": 0.07989485301893735,
+        "1101": 0.027601497166554984,
+        "0011": 0.10217025425899862,
+        "1011": 0.03492855955037798,
+        "0111": 0.09222355108853875,
+        "1111": 0.12652135165623185
+      },
+      "structural": {
+        "sabre_def": {
+          "n_2q": 16,
+          "n_1q": 48,
+          "depth": 34,
+          "region_class": "Default_Connected"
+        },
+        "tket_def": {
+          "n_2q": 16,
+          "n_1q": 50,
+          "depth": 38,
+          "region_class": "Default_Connected"
+        },
+        "prom_buf": {
+          "n_2q": 16,
+          "n_1q": 46,
+          "depth": 30,
+          "region_class": "Buffered_Disjoint_dG_ge_2"
+        },
+        "sabre_buf": {
+          "n_2q": 16,
+          "n_1q": 48,
+          "depth": 34,
+          "region_class": "Buffered_Disjoint_dG_ge_2"
+        },
+        "tket_buf": {
+          "n_2q": 16,
+          "n_1q": 50,
+          "depth": 38,
+          "region_class": "Buffered_Disjoint_dG_ge_2"
+        },
+        "prom_adj": {
+          "n_2q": 16,
+          "n_1q": 46,
+          "depth": 32,
+          "region_class": "Adjacent_dG_1"
+        }
+      }
+    },
+    "W5_qft_5q": {
+      "n_qubits": 5,
+      "pair": "P3",
+      "family": "QFT",
+      "ideal_probs": {
+        "00000": 0.031249999999999976,
+        "10000": 0.031249999999999976,
+        "01000": 0.031249999999999986,
+        "11000": 0.031249999999999976,
+        "00100": 0.031249999999999976,
+        "10100": 0.031249999999999965,
+        "01100": 0.031249999999999976,
+        "11100": 0.031249999999999976,
+        "00010": 0.031249999999999976,
+        "10010": 0.031249999999999976,
+        "01010": 0.031249999999999986,
+        "11010": 0.031249999999999976,
+        "00110": 0.031249999999999976,
+        "10110": 0.031249999999999965,
+        "01110": 0.031249999999999976,
+        "11110": 0.031249999999999976,
+        "00001": 0.031249999999999976,
+        "10001": 0.031249999999999976,
+        "01001": 0.031249999999999986,
+        "11001": 0.031249999999999976,
+        "00101": 0.031249999999999976,
+        "10101": 0.031249999999999965,
+        "01101": 0.031249999999999976,
+        "11101": 0.031249999999999976,
+        "00011": 0.031249999999999976,
+        "10011": 0.031249999999999976,
+        "01011": 0.031249999999999986,
+        "11011": 0.031249999999999976,
+        "00111": 0.031249999999999976,
+        "10111": 0.031249999999999965,
+        "01111": 0.031249999999999976,
+        "11111": 0.031249999999999976
+      },
+      "structural": {
+        "sabre_def": {
+          "n_2q": 32,
+          "n_1q": 93,
+          "depth": 76,
+          "region_class": "Default_Connected"
+        },
+        "tket_def": {
+          "n_2q": 32,
+          "n_1q": 99,
+          "depth": 65,
+          "region_class": "Default_Connected"
+        },
+        "prom_buf": {
+          "n_2q": 26,
+          "n_1q": 93,
+          "depth": 56,
+          "region_class": "Buffered_Disjoint_dG_ge_2"
+        },
+        "sabre_buf": {
+          "n_2q": 26,
+          "n_1q": 84,
+          "depth": 55,
+          "region_class": "Buffered_Disjoint_dG_ge_2"
+        },
+        "tket_buf": {
+          "n_2q": 32,
+          "n_1q": 99,
+          "depth": 65,
+          "region_class": "Buffered_Disjoint_dG_ge_2"
+        },
+        "prom_adj": {
+          "n_2q": 26,
+          "n_1q": 93,
+          "depth": 56,
+          "region_class": "Adjacent_dG_1"
+        }
+      }
+    },
+    "W6_qaoa_sparse_5q": {
+      "n_qubits": 5,
+      "pair": "P3",
+      "family": "Sparse_QAOA",
+      "ideal_probs": {
+        "00000": 0.23308980853637776,
+        "10000": 0.009336957971461314,
+        "01000": 0.0004992253084653706,
+        "11000": 0.03281109286876294,
+        "00100": 0.015333126613483218,
+        "10100": 0.0023821639598614643,
+        "01100": 0.01129517487274326,
+        "11100": 0.04849449938760184,
+        "00010": 0.00853270212014523,
+        "10010": 0.004675188078983298,
+        "01010": 0.012940259888877632,
+        "11010": 0.012432536756598101,
+        "00110": 0.049393616667957864,
+        "10110": 0.015395455201166603,
+        "01110": 0.02933794703090576,
+        "11110": 0.014050244736607325,
+        "00001": 0.014050244736607325,
+        "10001": 0.02933794703090576,
+        "01001": 0.015395455201166603,
+        "11001": 0.049393616667957864,
+        "00101": 0.012432536756598101,
+        "10101": 0.012940259888877632,
+        "01101": 0.004675188078983298,
+        "11101": 0.00853270212014523,
+        "00011": 0.04849449938760184,
+        "10011": 0.01129517487274326,
+        "01011": 0.0023821639598614643,
+        "11011": 0.015333126613483218,
+        "00111": 0.03281109286876294,
+        "10111": 0.0004992253084653706,
+        "01111": 0.009336957971461314,
+        "11111": 0.23308980853637776
+      },
+      "structural": {
+        "sabre_def": {
+          "n_2q": 31,
+          "n_1q": 101,
+          "depth": 77,
+          "region_class": "Default_Connected"
+        },
+        "tket_def": {
+          "n_2q": 36,
+          "n_1q": 120,
+          "depth": 91,
+          "region_class": "Default_Connected"
+        },
+        "prom_buf": {
+          "n_2q": 29,
+          "n_1q": 105,
+          "depth": 85,
+          "region_class": "Buffered_Disjoint_dG_ge_2"
+        },
+        "sabre_buf": {
+          "n_2q": 31,
+          "n_1q": 101,
+          "depth": 77,
+          "region_class": "Buffered_Disjoint_dG_ge_2"
+        },
+        "tket_buf": {
+          "n_2q": 36,
+          "n_1q": 120,
+          "depth": 91,
+          "region_class": "Buffered_Disjoint_dG_ge_2"
+        },
+        "prom_adj": {
+          "n_2q": 29,
+          "n_1q": 105,
+          "depth": 85,
+          "region_class": "Adjacent_dG_1"
+        }
+      }
+    },
+    "W7_dense_ent_5q": {
+      "n_qubits": 5,
+      "pair": "P4",
+      "family": "Dense_AllToAll",
+      "ideal_probs": {
+        "00000": 0.006458625379265447,
+        "10000": 0.09147207690013191,
+        "01000": 0.004687636033454346,
+        "11000": 0.005893528311896715,
+        "00100": 0.025335559612122267,
+        "10100": 0.07556075426675743,
+        "01100": 0.0006413508670849068,
+        "11100": 0.028986020589081285,
+        "00010": 0.07058960008649164,
+        "10010": 0.05696649655995861,
+        "01010": 0.004709247532472744,
+        "11010": 0.04552394600716174,
+        "00110": 0.00021005815629007442,
+        "10110": 0.031773800835829244,
+        "01110": 0.01792208026963388,
+        "11110": 0.044958072700864694,
+        "00001": 0.05919228828671571,
+        "10001": 0.04417976902818816,
+        "01001": 0.007844706943710653,
+        "11001": 0.03538816828416216,
+        "00101": 0.0027743868471466425,
+        "10101": 0.01896298011263828,
+        "01101": 0.010406760841351706,
+        "11101": 0.0422265624250924,
+        "00011": 0.017105332548086147,
+        "10011": 0.0687589020765797,
+        "01011": 0.01014828897976956,
+        "11011": 0.029689196202942473,
+        "00111": 0.01813981060416907,
+        "10111": 0.011087009548421388,
+        "01111": 0.008007634326030083,
+        "11111": 0.10439934883649951
+      },
+      "structural": {
+        "sabre_def": {
+          "n_2q": 22,
+          "n_1q": 61,
+          "depth": 43,
+          "region_class": "Default_Connected"
+        },
+        "tket_def": {
+          "n_2q": 22,
+          "n_1q": 77,
+          "depth": 51,
+          "region_class": "Default_Connected"
+        },
+        "prom_buf": {
+          "n_2q": 16,
+          "n_1q": 63,
+          "depth": 34,
+          "region_class": "Buffered_Disjoint_dG_ge_2"
+        },
+        "sabre_buf": {
+          "n_2q": 20,
+          "n_1q": 60,
+          "depth": 45,
+          "region_class": "Buffered_Disjoint_dG_ge_2"
+        },
+        "tket_buf": {
+          "n_2q": 22,
+          "n_1q": 77,
+          "depth": 51,
+          "region_class": "Buffered_Disjoint_dG_ge_2"
+        },
+        "prom_adj": {
+          "n_2q": 16,
+          "n_1q": 63,
+          "depth": 34,
+          "region_class": "Adjacent_dG_1"
+        }
+      }
+    },
+    "W8_trotter_5q": {
+      "n_qubits": 5,
+      "pair": "P4",
+      "family": "Trotter_Dynamics",
+      "ideal_probs": {
+        "10000": 0.01124398166212566,
+        "01000": 0.009101249579993384,
+        "00100": 0.0656812436317518,
+        "11100": 0.005845240026686924,
+        "00010": 0.012735831190578317,
+        "11010": 0.007483597321308605,
+        "10110": 0.08483374762723646,
+        "01110": 0.0052261564712882055,
+        "00001": 0.006875261397788008,
+        "11001": 0.06446421043807678,
+        "10101": 0.5521958059291933,
+        "01101": 0.08466446908231878,
+        "10011": 0.060214426738821915,
+        "01011": 0.01189902091544593,
+        "00111": 0.005945731859877633,
+        "11111": 0.011590026127509596
+      },
+      "structural": {
+        "sabre_def": {
+          "n_2q": 23,
+          "n_1q": 68,
+          "depth": 43,
+          "region_class": "Default_Connected"
+        },
+        "tket_def": {
+          "n_2q": 26,
+          "n_1q": 90,
+          "depth": 56,
+          "region_class": "Default_Connected"
+        },
+        "prom_buf": {
+          "n_2q": 23,
+          "n_1q": 83,
+          "depth": 43,
+          "region_class": "Buffered_Disjoint_dG_ge_2"
+        },
+        "sabre_buf": {
+          "n_2q": 23,
+          "n_1q": 68,
+          "depth": 43,
+          "region_class": "Buffered_Disjoint_dG_ge_2"
+        },
+        "tket_buf": {
+          "n_2q": 26,
+          "n_1q": 90,
+          "depth": 56,
+          "region_class": "Buffered_Disjoint_dG_ge_2"
+        },
+        "prom_adj": {
+          "n_2q": 23,
+          "n_1q": 83,
+          "depth": 43,
+          "region_class": "Adjacent_dG_1"
+        }
+      }
+    }
+  }
+}

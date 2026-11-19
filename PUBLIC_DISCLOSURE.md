@@ -1,0 +1,13 @@
+# Public Disclosure & Intellectual Property Boundary
+
+This repository archives sanitized empirical hardware benchmarks, pre-execution SHA-256 commitment manifests, anonymized buffered region assignments (`Sub5_1..Sub5_4`), native `prx`/`cz` structural gate counts, Station Control timing and billing records, ideal statevector probability distributions, and raw bitstring measurement histograms across all **59 completed hardware jobs (1,479 physical circuits/`PUBs`, 1,935 measured workload evaluations, 1,135,616 physical shots: 40 spatial-multiplexing jobs + 19 dense-circuit K=8 optimization & matched-placement jobs)** collected on `IQM Garnet` (20Q) and `IQM Emerald` (54Q) via IQM Resonance.
+
+## Proprietary Hardware-Aware Optimization Boundary
+In accordance with Prometheus Dynamics' intellectual property boundary policy across all public repositories:
+1. **Proprietary Hardware-Aware Optimization:** Prometheus uses circuit structure and device calibration data to guide compilation and execution. Proprietary optimization, compilation, placement, and execution-control software, internal parameters, and physical qubit coordinate mappings (`QB1..QB54`) are withheld.
+2. **Serialized Pulse/Gate Schedules:** Physical native gate instruction lists are replaced with structural summary metrics (`n_2q`, `n_1q`, `depth`) and exact ideal statevector probability distributions (`ideal_probs`).
+
+## Verifiable Empirical Provenance & Historical Object Notice
+1. **SHA-256 Manifest Provenance & Reference Digests:** Every sanitized public manifest documents its current byte-exact public SHA-256 digest alongside recorded reference digests to the withheld pre-sanitization originals (note that recorded private digests preserve internal audit continuity rather than independently authenticating withheld private files on their own in the public release).
+2. **100% Raw-Histogram & Statistical Recomputation:** Every reported Classical Bhattacharyya Overlap (F_B), Squared Hellinger Fidelity (F_H = F_B²), Total Variation Distance (TVD), exact two-sided sign-flip p-value, Holm-Bonferroni adjustment, and bootstrap 95% confidence interval across all 1,935 workload evaluations (1,196 spatial-multiplexing evaluations + 739 dense-circuit evaluations) is independently recomputed and asserted from raw bitstring histograms via [`scripts/verify_iqm_resonance_ledger.py`](scripts/verify_iqm_resonance_ledger.py).
+3. **Clean Single-Commit Repository Release:** This repository is published as a freshly created single-commit sanitized release (`0` historical pre-sanitization commits in repository object storage; external copies downloaded prior to repository recreation cannot be recalled).

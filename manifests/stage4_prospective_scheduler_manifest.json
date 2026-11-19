@@ -1,0 +1,192 @@
+{
+  "manifest_type": "PUBLIC_SANITIZED_COMMITMENT_MANIFEST",
+  "original_private_manifest_sha256": "02195319498aff05470454556dbde3c1188338dff54a6a421c62f882dd602f2d",
+  "redaction_notice": "Proprietary hardware-aware optimization parameters and physical qubit coordinates are withheld per PUBLIC_DISCLOSURE.md.",
+  "manifest_version": "1.0_frozen_pre_stage4_hardware",
+  "frozen_timestamp_utc": "2026-11-04T02:42:58.920281+00:00",
+  "heldout_hardware_executed_before_freeze": false,
+  "original_private_heldout_suite_sha256": "f3db4a1d19d224f8e20936c9637716dee6f7d7d7605824dd4681f103ab648d0d",
+  "stage4_credit_ceiling": 45.0,
+  "fixed_policy_pub_counts": {
+    "Always_1Way_Isolated": 32,
+    "Always_2Way_Packed": 16,
+    "Always_4Way_Packed": 8,
+    "Fixed_Policies_Subtotal_PUBs": 56
+  },
+  "prospective_scheduler_pub_count": 14,
+  "total_stage4_pubs": 70,
+  "group_schedules": {
+    "HG01": {
+      "group_id": "HG01",
+      "width_type": "4Q_homogeneous",
+      "workloads": [
+        "H01_qft_4q_s1",
+        "H02_qaoa_sparse_4q_s1",
+        "H03_chem_ansatz_4q_s1",
+        "H04_qaoa_dense_4q_s1"
+      ],
+      "chosen_policy": "4",
+      "n_pubs": 1,
+      "pub_partition": [
+        [
+          "H01_qft_4q_s1",
+          "H02_qaoa_sparse_4q_s1",
+          "H03_chem_ansatz_4q_s1",
+          "H04_qaoa_dense_4q_s1"
+        ]
+      ]
+    },
+    "HG02": {
+      "group_id": "HG02",
+      "width_type": "4Q_homogeneous",
+      "workloads": [
+        "H05_qft_4q_s2",
+        "H06_qaoa_sparse_4q_s2",
+        "H07_dense_ent_4q_s2",
+        "H08_trotter_4q_s1"
+      ],
+      "chosen_policy": "4",
+      "n_pubs": 1,
+      "pub_partition": [
+        [
+          "H05_qft_4q_s2",
+          "H06_qaoa_sparse_4q_s2",
+          "H07_dense_ent_4q_s2",
+          "H08_trotter_4q_s1"
+        ]
+      ]
+    },
+    "HG03": {
+      "group_id": "HG03",
+      "width_type": "4Q_homogeneous",
+      "workloads": [
+        "H09_qaoa_sparse_4q_s1",
+        "H10_chem_ansatz_4q_s2",
+        "H11_qft_4q_s2",
+        "H12_trotter_4q_s4"
+      ],
+      "chosen_policy": "4",
+      "n_pubs": 1,
+      "pub_partition": [
+        [
+          "H09_qaoa_sparse_4q_s1",
+          "H10_chem_ansatz_4q_s2",
+          "H11_qft_4q_s2",
+          "H12_trotter_4q_s4"
+        ]
+      ]
+    },
+    "HG04": {
+      "group_id": "HG04",
+      "width_type": "4Q_homogeneous",
+      "workloads": [
+        "H13_qaoa_sparse_4q_s2",
+        "H14_qaoa_dense_4q_s2",
+        "H15_dense_ent_4q_s4",
+        "H16_trotter_4q_s5"
+      ],
+      "chosen_policy": "4",
+      "n_pubs": 1,
+      "pub_partition": [
+        [
+          "H13_qaoa_sparse_4q_s2",
+          "H14_qaoa_dense_4q_s2",
+          "H15_dense_ent_4q_s4",
+          "H16_trotter_4q_s5"
+        ]
+      ]
+    },
+    "HG05": {
+      "group_id": "HG05",
+      "width_type": "5Q_homogeneous",
+      "workloads": [
+        "H17_qaoa_sparse_5q_s1",
+        "H18_chem_ansatz_5q_s1",
+        "H19_qft_5q_s1",
+        "H20_trotter_5q_s1"
+      ],
+      "chosen_policy": "4",
+      "n_pubs": 1,
+      "pub_partition": [
+        [
+          "H17_qaoa_sparse_5q_s1",
+          "H18_chem_ansatz_5q_s1",
+          "H19_qft_5q_s1",
+          "H20_trotter_5q_s1"
+        ]
+      ]
+    },
+    "HG06": {
+      "group_id": "HG06",
+      "width_type": "5Q_homogeneous",
+      "workloads": [
+        "H21_qaoa_sparse_5q_s3",
+        "H22_qaoa_dense_5q_s3",
+        "H23_qft_5q_s3",
+        "H24_trotter_5q_s4"
+      ],
+      "chosen_policy": "2+1+1",
+      "n_pubs": 3,
+      "pub_partition": [
+        [
+          "H21_qaoa_sparse_5q_s3",
+          "H23_qft_5q_s3"
+        ],
+        [
+          "H22_qaoa_dense_5q_s3"
+        ],
+        [
+          "H24_trotter_5q_s4"
+        ]
+      ]
+    },
+    "HG07": {
+      "group_id": "HG07",
+      "width_type": "5Q_homogeneous",
+      "workloads": [
+        "H25_qaoa_sparse_5q_s3",
+        "H26_qft_5q_s3",
+        "H27_qaoa_dense_5q_s4",
+        "H28_trotter_5q_s4"
+      ],
+      "chosen_policy": "2+1+1",
+      "n_pubs": 3,
+      "pub_partition": [
+        [
+          "H25_qaoa_sparse_5q_s3",
+          "H26_qft_5q_s3"
+        ],
+        [
+          "H27_qaoa_dense_5q_s4"
+        ],
+        [
+          "H28_trotter_5q_s4"
+        ]
+      ]
+    },
+    "HG08": {
+      "group_id": "HG08",
+      "width_type": "5Q_homogeneous",
+      "workloads": [
+        "H29_qaoa_sparse_5q_s3",
+        "H30_dense_ent_5q_s3",
+        "H31_qaoa_dense_5q_s4",
+        "H32_trotter_5q_s5"
+      ],
+      "chosen_policy": "2+1+1",
+      "n_pubs": 3,
+      "pub_partition": [
+        [
+          "H29_qaoa_sparse_5q_s3",
+          "H30_dense_ent_5q_s3"
+        ],
+        [
+          "H31_qaoa_dense_5q_s4"
+        ],
+        [
+          "H32_trotter_5q_s5"
+        ]
+      ]
+    }
+  }
+}
