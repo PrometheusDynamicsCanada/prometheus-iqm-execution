@@ -25,10 +25,10 @@ All 19 dense-circuit jobs (739 physical circuits, 756,736 shots at 1,024 shots/c
 
 | Circuit Family | Workloads (N) | Primary Domain Observable | `P2b_TKET_Pure_K8` F_B *(mean)* \| TVD \| Observable | `P3_SABRE_K8` F_B *(mean)* \| TVD \| Observable | `P5_Prometheus_K8` F_B *(mean)* (↑) \| TVD (↓) \| Observable | % Delta F_B & Paired Wilcoxon p (`P5` vs. `P3_SABRE_K8`) |
 | :--- | :---: | :--- | :--- | :--- | :--- | :--- |
-| `F1_Weighted_Complete_QAOA` | 12 | MaxCut Expectation Error |C_meas - C_ideal| (↓) | 0.6531 \| 0.5970 \| Err = 3.3537 | 0.6728 \| 0.5762 \| Err = 3.3086 | **0.7217 \| 0.5160 \| Err = 2.6767 (-19.1% err)** | **+7.28%** (p = 0.00146, 11/12 wins) |
+| `F1_Weighted_Complete_QAOA` | 12 | MaxCut Expectation Error \|C_meas - C_ideal\| (↓) | 0.6531 \| 0.5970 \| Err = 3.3537 | 0.6728 \| 0.5762 \| Err = 3.3086 | **0.7217 \| 0.5160 \| Err = 2.6767 (-19.1% err)** | **+7.28%** (p = 0.00146, 11/12 wins) |
 | `F2_Noncommuting_AllToAll` | 12 | Top-8 Ideal Mode Mass Retention (↑) | 0.7216 \| 0.4978 \| Top8 = 0.0398 | 0.7250 \| 0.4868 \| Top8 = 0.0449 | **0.7640 \| 0.4287 \| Top8 = 0.0662 (+47.4%)** | **+5.37%** (p = 4.88 × 10⁻⁴, **12/12 wins**) |
 | `F3_Phase_Sensitive_QFT` | 12 | Top-8 QFT Peak Mass Retention (↑) | 0.6619 \| 0.5707 \| Top8 = 0.0284 | 0.7280 \| 0.4922 \| Top8 = 0.0491 | **0.7331 \| 0.4821 \| Top8 = 0.0602 (+22.6%)** | **+0.71%** (p = 0.3804, 7/12 wins) |
-| `F4_Dense_Exchange_XXYY` | 12 | Magnetization MAE (1/n) Σ_q |⟨Z_q⟩_meas - ⟨Z_q⟩_ideal| (↓) | 0.7110 \| 0.5158 \| MAE = 0.1205 | 0.7235 \| 0.4954 \| MAE = 0.1213 | **0.7367 \| 0.4797 \| MAE = 0.1115 (-8.1% vs. P3)** | **+1.83%** (p = 0.0210, 9/12 wins) |
+| `F4_Dense_Exchange_XXYY` | 12 | Magnetization MAE (1/n) Σ_q \|⟨Z_q⟩_meas - ⟨Z_q⟩_ideal\| (↓) | 0.7110 \| 0.5158 \| MAE = 0.1205 | 0.7235 \| 0.4954 \| MAE = 0.1213 | **0.7367 \| 0.4797 \| MAE = 0.1115 (-8.1% vs. P3)** | **+1.83%** (p = 0.0210, 9/12 wins) |
 
 ### 2.3 Prospective Execution Manager Accounting (`Prometheus_Exec_Manager` vs. `P5_Prometheus_K8` Alone)
 - **Candidate-Arm Counts per Stage/Window:** Stage 1 Pilot (3 workloads): 6 arms; Stage 2 Window A (48 workloads): all 6 arms; Stage 2 Window B Batches 1-4 (39 workloads): 5 arms (`P1`, `P2` or `P4` when pre-selected, `P2b`, `P3`, `P5`); Stage 2 Window B Batch 5 (9 workloads): all 4 K=8 arms; Stage 3 Window A (22 workloads): all 4 K=8 arms; Stage 3 Window B (16 workloads): 3 K=8 arms (`P2b`, `P3`, `P5`); Stage 4 Window A (12 workloads): all 4 K=8 arms; Stage 4 Window B (6 workloads): 3 K=8 arms (`P2b`, `P3`, `P5`).
