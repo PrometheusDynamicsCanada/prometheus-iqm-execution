@@ -4,12 +4,6 @@
   "file_count": 34,
   "files": {
     ".gitattributes": "fbbf6471af40b215a6a5e77b0118079665ecbeef0da86ef9c71530bc662ecad4",
-    "DATA_DICTIONARY.md": "3e2d1b2b0690060131b6cb2be5d62558fa697e5992922efd48a75c7ebcfa69b3",
-    "DETAILED_TECHNICAL_REPORT.md": "8b01955bea78e0c9d63df0f6b0b34658f382e32518ec1d6deee12bfea22ab3c7",
-    "LICENSE": "a214fc704360fbd5de37600c8e7f97872cef5c021d6605a554a27fb093ad5ea6",
-    "PUBLIC_DISCLOSURE.md": "457c8e926716d105d10951b8854785ed610d0504c1cbe95c33b4c8a6b525cea8",
-    "README.md": "bf0db39f4d2c47acd2de520ddd0d46f5bc3d9e70390a9510d306da457ad8140b",
-    "REPOSITORY_SHA256SUMS.txt": "22427aefa20f1ac50cee8302fde545ac30f77d547c6671e4402751975c003f5a",
     "assets/fig1_dense_stage2_parity_and_families.png": "c53b484dba0acb52d6fe3688b422230f1914baa372aaebfa87502b56fb001ece",
     "assets/fig1_iqm_stage2_multiwindow_replication.png": "8cd60a006dbc7e12bea7167d903358ebd191aec5cb6dc21a793d0a93e96da519",
     "assets/fig2_dense_stage3_stage4_and_exec_manager.png": "a4514baf37e2402504acbc69a5f4ac6e0daca8336dc049d7108470d8b7f45d3d",
@@ -32,10 +26,16 @@
     "data/stage4_compiled_32heldout_suite.json": "3e26d42e9b51ba293f2e698d05a8851d0d4377f914dc3028a6f70559da72aad8",
     "data/stage4_prospective_scheduler_results.json": "6aa13afc606a10d16da51eda9ca1f6925edc8cfc0ad8bc2bd90cdaa65b25c237",
     "data/stage4b_boundary_stress_results.json": "933a89a94e18aac7d5eb80d2526f1742cdb34e4f3086f853c60e45d5572d5913",
+    "DATA_DICTIONARY.md": "3e2d1b2b0690060131b6cb2be5d62558fa697e5992922efd48a75c7ebcfa69b3",
+    "DETAILED_TECHNICAL_REPORT.md": "8b01955bea78e0c9d63df0f6b0b34658f382e32518ec1d6deee12bfea22ab3c7",
+    "LICENSE": "a214fc704360fbd5de37600c8e7f97872cef5c021d6605a554a27fb093ad5ea6",
     "manifests/dense_campaign_preexecution_manifest.json": "4db2f11f425edfbfe55f0f0cadf0e9688f3c6a84604b96feced654d0559f4bff",
     "manifests/stage2_frozen_scope_manifest.json": "c9fe75951bcdc48388ea62f3d1e1ebfc88fe672fb9dcb6fb49ba6cefbc45915b",
     "manifests/stage4_prospective_scheduler_manifest.json": "02e22b8d7431ef4f35a362af1c0b2776845454d6fba0afeb30b85b290b1d2951",
     "manifests/stage4b_boundary_stress_manifest.json": "f4ce3f96d50c81654152c55a3b50c64393b12104c742021b3886353c949f3979",
+    "PUBLIC_DISCLOSURE.md": "457c8e926716d105d10951b8854785ed610d0504c1cbe95c33b4c8a6b525cea8",
+    "README.md": "aad840521ac0a071cc23e906fd8594bbc324e63945d7b2886d1146e6c516ebbb",
+    "REPOSITORY_SHA256SUMS.txt": "0170d5d7f7e648efefdf9d920452b2abde254887b1c24992a00399582f1a3bde",
     "scripts/verify_iqm_resonance_ledger.py": "5ed619056c4073caffee99bda382c591a48451f232e7499738d23fa8ee471210"
   }
 }
