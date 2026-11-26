@@ -1,12 +1,28 @@
-# Compilation, Spatial Packing & Quality-Gated Scheduling on IQM Hardware
+# Dense Compilation, 4-Way Packing & Scheduler Controls on IQM Hardware
 
-*Portfolio Hub: [Prometheus Quantum Overview](https://github.com/PrometheusDynamicsCanada/prometheus-quantum-overview) · [552-Record IQM / 1,081-Record Portfolio Ledger](https://github.com/PrometheusDynamicsCanada/prometheus-quantum-overview/blob/main/PORTFOLIO_ACCOUNTING_LEDGER.json) · [Detailed Technical Report](DETAILED_TECHNICAL_REPORT.md) · [Public Disclosure](PUBLIC_DISCLOSURE.md)*
+*Portfolio Hub: [Prometheus Quantum Overview](https://github.com/PrometheusDynamicsCanada/prometheus-quantum-overview) · [Sibling 214-Record IQM Validation Campaign](https://github.com/PrometheusDynamicsCanada/prometheus-iqm-validation-campaign) · [Detailed Technical Report](DETAILED_TECHNICAL_REPORT.md) · [Public Disclosure](PUBLIC_DISCLOSURE.md)*
 
+Square-lattice quantum processors require extra routing gates on heavily connected circuits, while small 4-to-5-qubit jobs leave most of a 54-qubit chip unused. We evaluated three distinct software capabilities on 54-qubit IQM Emerald and 20-qubit IQM Garnet: equal-budget dense compilation, buffered 4-way circuit packing, and duration-aware packing scheduling.
+
+Across 48 dense 7-to-12-qubit workloads given an equal eight-candidate search budget, Prometheus improved average output agreement by 3.73% over Qiskit SABRE (winning 39 of 48) and 7.57% over Quantinuum TKET (46 of 48), cutting weighted QAOA MaxCut error by 19.1% and winning 16 of 16 fixed-subgraph routing checks. On 4-to-5-qubit workloads, 4-way packing reduced Prometheus's billed credits by 66.7% versus separate execution (7.50 vs. 22.50 credits, 3.00x qualifying results per credit), used 9.1% fewer credits than equally 4-way-packed SABRE (7.50 vs. 8.25 credits), and passed 120 of 120 checks versus 118 of 120 for equally packed TKET; in a 16-workload duration-mismatch stress test, Prometheus's scheduler recovered 99.0% of blind-packing quality loss at 20% lower cost than separate runs.
+
+On zero-SWAP 1D chains and phase-sensitive QFT, differences versus SABRE were not statistically significant, and at 13 to 17 qubits hardware decoherence kept absolute agreement low (0.2022) despite 12 of 12 pairwise wins.
+
+This repository contains the results, raw measurements, and offline verification tools from 59 completed IQM Resonance hardware jobs (1.14 million measurement shots).
+
+![IQM Buffered 4-Way Parallel Execution and Scheduler Controls](assets/fig2_iqm_stage3_interference_and_stage4_scheduler.png)
+*Summary figure: Buffered 4-way packing on 54-qubit IQM Emerald (66.7% lower billed credits vs. separate execution) and duration-aware scheduler recovery (99.0% of blind-packing overlap drop recovered).*
+
+**[Read the detailed results](#detailed-results) · [Verify the data](#verify-the-data) · [Request an evaluation](https://prometheusdynamics.ca/connect/) · [Book a demonstration](mailto:william@prometheusdynamics.ca?subject=Prometheus%20IQM%20Evaluation)**
+
+---
+
+<a id="detailed-results"></a>
 ## Executive Summary (`54Q` `IQM Emerald` & `20Q` `IQM Garnet`, `59` Jobs, `1,479` PUBs, `1,935` Evaluations, `1,135,616` Shots)
 
 *Scope note:* This repository contains `59` live IQM Resonance hardware jobs (`19` dense-compilation jobs `01a1a579..`..`01a1a5a8..` and `40` spatial-packing/scheduler jobs `01a19ff2..`..`01a1a47b..`), which form one component of the `552` unique IQM Resonance records reconciled across all `15` quantum repositories in [`PORTFOLIO_ACCOUNTING_LEDGER.json`](https://github.com/PrometheusDynamicsCanada/prometheus-quantum-overview/blob/main/PORTFOLIO_ACCOUNTING_LEDGER.json) (for the subsequent `214`-record `v4.2` IQM Crystal campaign and preregistered `84`-job `6Q-11Q` `7`-family Garnet sweep, see sibling repository [`prometheus-iqm-validation-campaign`](https://github.com/PrometheusDynamicsCanada/prometheus-iqm-validation-campaign)). The three evaluated capabilities - **(1) non-local circuit compilation**, **(2) small-circuit `4-way` spatial packing**, and **(3) quality-gated packing scheduling** - are reported separately below alongside their matched baseline controls:
 
-| Capability & Experimental Arm | Scope (`Workloads` / `Evals`) | Output-Distribution Agreement $F_B$ `*(mean / med)*` `(↑)` | Squared Hellinger $F_H$ `*(mean)*` `(↑)` | `TVD` `*(mean)*` `(↓)` | `CZ` Gates / `2Q` Depth `*(mean)*` `(↓)` | Billed Credits & Qualifying Yield (`F_B >= 0.90` on `4Q-5Q`) |
+| Capability & Experimental Arm | Scope (`Workloads` / `Evals`) | Output-Distribution Agreement $F_B$ *(mean / med)* `(↑)` | Squared Hellinger $F_H$ *(mean)* `(↑)` | `TVD` *(mean)* `(↓)` | `CZ` Gates / `2Q` Depth *(mean)* `(↓)` | Billed Credits & Qualifying Yield (`F_B >= 0.90` on `4Q-5Q`) |
 | :--- | :---: | :---: | :---: | :---: | :---: | :--- |
 | **1. Compilation (`7Q-12Q` Dense): TKET `K=8`** | `48` wklds / `96` evals | `0.6869` / `0.7275` | `0.5035` | `0.5453` | `251.04` / `127.42` | `2 / 48` pairwise wins vs. Prom |
 | **1. Compilation (`7Q-12Q` Dense): SABRE `K=8`** | `48` wklds / `96` evals | `0.7123` / `0.7441` | `0.5385` | `0.5126` | `152.08` / `81.58` | `9 / 48` pairwise wins vs. Prom |
@@ -40,17 +56,16 @@
 3. **Quality-Gated Packing Scheduler (`4Q-5Q`, `15` Stage 3-4 Jobs):**
    - **Mechanism & trade-off:** Stage 3 delay controls showed that `~78.1%` of `4-way` overlap loss on `5Q` Trotter rings came from waiting for longer co-scheduled circuits (`-0.0207` of `-0.0265` $\Delta F_B$). In the `16`-workload Stage 4B stress suite, blind `4-way` packing cost `1.50` credits (`0.9078` mean $F_B$) vs. `3.75` credits for `1-way` (`0.9462`). The prospective `Prometheus Scheduler` (`3.00` credits, `0.9458` mean $F_B$) recovered **`99.0%` of the packing-induced overlap drop** (`0.0379` of `0.0384`), demonstrating a controlled quality-versus-credit trade-off (`14/16` vs. `12/16` passing at `F_B >= 0.88`, and `12/16` across all three policies at `F_B >= 0.90`).
 
-![IQM Buffered 4-Way Parallel Execution and Scheduler Controls](assets/fig2_iqm_stage3_interference_and_stage4_scheduler.png)
-*Summary figure: `4-way` spatial packing on `54Q` `IQM Emerald` (`-66.7%` credits vs. `1-way` execution) and Stage 4B prospective scheduler trade-off (`99.0%` recovery of blind-packing overlap loss at `3.00` vs. `3.75` `1-way` credits).*
 
 ---
 
+<a id="verify-the-data"></a>
 ## Inspect the Evidence & Reproduce Supported Checks Offline
 
 - **What can and cannot be reproduced publicly:** Per [`PUBLIC_DISCLOSURE.md`](PUBLIC_DISCLOSURE.md), all `1,935` raw bitstring measurement histograms (`counts`), ideal statevector reference distributions (`ideal_probs`), structural gate/depth summaries, pre-execution timestamps, and statistical hypothesis tests are published and verified offline below, whereas proprietary compiler routing code, physical qubit coordinate lists, and serialized gate schedules are withheld.
 - **Command:** `python scripts/verify_iqm_resonance_ledger.py`
 - **Dependencies & measured runtime:** Python 3 + `numpy` + `scipy` (`0` cloud credentials, **`~3.25 s`** measured runtime; recomputes all `1,935` evaluations across all `59` jobs, `47` bootstrap/sign-flip statistical blocks, and `34/34` file SHA-256 digests).
-- **Try QuantumCompiler (`10` free jobs) or discuss a benchmark:** [prometheusdynamics.ca/quantumcompiler](https://prometheusdynamics.ca/quantumcompiler) | [william@prometheusdynamics.ca](mailto:william@prometheusdynamics.ca)
+- **Request an evaluation or book a demonstration:** [prometheusdynamics.ca/connect](https://prometheusdynamics.ca/connect/) | [william@prometheusdynamics.ca](mailto:william@prometheusdynamics.ca?subject=Prometheus%20Evaluation)
 
 ---
 
